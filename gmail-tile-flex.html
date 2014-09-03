@@ -1,7 +1,7 @@
 <!-- gmail flex markup experiment -->
 <style>
 	body { margin:0; }
-  	@media only screen and (max-width: 640px) {
+  	@media only screen and (min-width: 640px) {
 		.wrapper { width:640px !important; }
 	}
 	@media only screen and (device-aspect-ratio: 2/3) {
@@ -11,13 +11,22 @@
 <!--[if gte mso 9]>
 	<style>
 		.flex-item { width:100% !important; }
-		.flex-image { width:640px !important; height:auto !important; }
  	</style>
+<![endif]-->
+<!--[if lte mso 9]>
+    <style type="text/css">
+        .wrapper { width:640px !important; }
+    </style>
+<![endif]-->
+<!--[if gte mso 9]>
+    <style type="text/css">
+        .wrapper { width:640px !important; }
+    </style>
 <![endif]-->
 <table bgcolor="#f6f6f6" width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;">
   <tr>
     <td>
-      <table width="640" class="wrapper" align="center" bgcolor="#ffffff" cellpadding="0" cellspacing="0" style="border-collapse:collapse; margin:auto; max-width:640px;">
+      <table width="640" class="wrapper" align="center" bgcolor="#ffffff" cellpadding="0" cellspacing="0" style="border-collapse:collapse; margin:auto; width:auto; max-width:640px;">
         <tr>
           <td>
             <!--[if gte mso 9]><table width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;"><tr><td valign="top"><![endif]-->
@@ -34,11 +43,6 @@
             </table>
             <!--[if gte mso 9]></td></tr></table><![endif]-->
             <div style="clear:both;"></div>
-            <table width="100%" cellpadding="0" cellspacing="0" style="border-collapse:separate;">
-              <tr><td style="border-bottom:#000000 1px solid; line-height:0;" height="25">&nbsp;</td></tr>
-              <tr><td style="border-top:#000000 1px solid; line-height:0;" height="25">&nbsp;</td></tr>
-            </table>
-            <img src="http://habrastorage.org/files/575/366/c20/575366c20802431fbf79fb997d5b2d1f.jpg" width="640" class="flex-image" style="height:auto !important; margin:0; display:block;">
           </td>
         </tr>
         <tr>
@@ -54,3 +58,8 @@
     </td>
   </tr>
 </table>
+<!--[if lte mso 9]>
+    <style type="text/css">
+        .wrapper { width:640px !important; }
+    </style>
+<![endif]-->
