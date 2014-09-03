@@ -1,14 +1,23 @@
 <!-- gmail flex markup experiment -->
 <style>
 	body { margin:0; }
+  	@media only screen and (max-width: 640px) {
+		.wrapper { width:640px !important; }
+	}
+	@media only screen and (device-aspect-ratio: 2/3) {
+		
+	}
 </style>
 <!--[if gte mso 9]>
-	.flex-item { width:100% !important; }
+	<style>
+		.flex-item { width:100% !important; }
+		.flex-image { width:640px !important; height:auto !important; }
+ 	</style>
 <![endif]-->
 <table bgcolor="#f6f6f6" width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;">
   <tr>
     <td>
-      <table width="640" class="wrapper" align="center" bgcolor="#ffffff" cellpadding="0" cellspacing="0" style="border-collapse:collapse; margin:auto; width:auto !important;">
+      <table width="640" class="wrapper" align="center" bgcolor="#ffffff" cellpadding="0" cellspacing="0" style="border-collapse:collapse; margin:auto; max-width:640px;">
         <tr>
           <td>
             <!--[if gte mso 9]><table width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;"><tr><td valign="top"><![endif]-->
@@ -24,6 +33,21 @@
               </tr>
             </table>
             <!--[if gte mso 9]></td></tr></table><![endif]-->
+            <div style="clear:both;"></div>
+            <table width="100%" cellpadding="0" cellspacing="0" style="border-collapse:separate;">
+              <tr><td style="border-bottom:#000000 1px solid; line-height:0;" height="25">&nbsp;</td></tr>
+              <tr><td style="border-top:#000000 1px solid; line-height:0;" height="25">&nbsp;</td></tr>
+            </table>
+            <img src="http://habrastorage.org/files/575/366/c20/575366c20802431fbf79fb997d5b2d1f.jpg" width="640" class="flex-image" style="height:auto !important; margin:0; display:block;">
+          </td>
+        </tr>
+        <tr>
+          <td>
+          <p style="font-size:11pt;">Я постоянно анализирую всевозможные рассылки и вообще html письма, которые падают мне в ящик, а это сотни писем каждый день и не перестаю удивляться тому, через какое место они сделаны. В этой статье я бы хотел привести ряд таких примеров и показать пути их решения.</p>
+
+          	<h2>Спам</h2>
+
+			<p style="font-size:14px;">Куча писем попадает в спам. Даже если они таковыми и не являются. 30% сервисов, в которых я регистрируюсь отправляют подтверждение регистрации мне на почту, но я ловлю его в спаме. Но это я. Да, я читаю папку «спам». Складывается впечатление, что многим просто плевать на потенциальных клиентов. Куда смешнее получать подобные письма в спам от компаний, предоставляющих, например, услуги рассылок. Каламбур.</p>
           </td>
         </tr>
       </table>
