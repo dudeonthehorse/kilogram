@@ -22,7 +22,7 @@
         color:#666666;
         line-height:1.4em;
     }
-	    .p {
+	    .paragraph {
 	        font-family:'roboto-light', arial;
 	        font-size:14px;
 	        color:#666666;
@@ -32,6 +32,13 @@
         display:inline-block;
         vertical-align:top;
     }
+		.button table {
+			border-collapse: separate !important;
+			border:#ffffff 5px solid;
+		}
+		.button td {
+
+		}
         .button div {
             font-family:'roboto-light', arial;
             font-size:14px;
@@ -135,25 +142,30 @@
 			<td bgcolor="#ffffff" class="one-column content" style="padding-bottom:0;">
                 <div class="h1">Paragraph Heading</div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <br>
-                <div class="h1">Button Examples</div>
-                <br>
-                <div align="left">
+                <div align="center">
                     <div class="button">
                         <table cellpadding="10" cellspacing="0">
                             <tr>
                                 <td bgcolor="#666666" style="padding:10px 20px; border-radius:50px;">
-                                    <div><b><a href="#" target="_blank"><span>Button Example</span></a></b></div>
+                                    <div><b><a href="#" target="_blank"><span>Button&nbsp;Example</span></a></b></div>
                                 </td>
                             </tr>
                         </table>
                     </div>
-                    &nbsp;
                     <div class="button">
                         <table cellpadding="10" cellspacing="0">
                             <tr>
                                 <td bgcolor="#666666" style="padding:10px 20px;">
-                                    <div><b><a href="#" target="_blank"><span>Button Example</span></a></b></div>
+                                    <div><b><a href="#" target="_blank"><span>Button&nbsp;Example</span></a></b></div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+					<div class="button">
+                        <table cellpadding="10" cellspacing="0">
+                            <tr>
+                                <td bgcolor="#666666" style="padding:10px 20px; border-radius:50px;">
+                                    <div><b><a href="#" target="_blank"><span>Button&nbsp;Example</span></a></b></div>
                                 </td>
                             </tr>
                         </table>
@@ -188,13 +200,13 @@
                     <table class="inner" width="100%" cellpadding="10" cellspacing="0">
                         <tr>
                             <td>
-                                <div align="left" class="p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br><br></div>
+                                <div align="left" class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br><br></div>
 								<div align="left">
 									<div class="button">
-				                        <table cellpadding="10" cellspacing="0">
+				                        <table cellpadding="10" cellspacing="0" style="border-left:0;">
 				                            <tr>
 				                                <td bgcolor="#666666" style="padding:10px 20px; border-radius:50px;">
-				                                    <div><b><a href="#" target="_blank"><span>Button Example</span></a></b></div>
+				                                    <div><b><a href="#" target="_blank"><span>Button&nbsp;Example</span></a></b></div>
 				                                </td>
 				                            </tr>
 				                        </table>
@@ -219,7 +231,7 @@
                                 <table width="100%" cellpadding="10" cellspacing="0">
                                     <tr>
                                         <td bgcolor="#cccccc">
-                                            <div class="p">2 columns</div>
+                                            <div class="paragraph">2 columns</div>
                                         </td>
                                     </tr>
                                 </table>
@@ -235,7 +247,7 @@
                                 <table width="100%" cellpadding="10" cellspacing="0">
                                     <tr>
                                         <td bgcolor="#cccccc">
-                                            <div class="p">2 columns</div>
+                                            <div class="paragraph">2 columns</div>
                                         </td>
                                     </tr>
                                 </table>
@@ -258,7 +270,7 @@
                                 <table width="100%" cellpadding="10" cellspacing="0">
                                     <tr>
                                         <td bgcolor="#cccccc">
-                                            <div class="p">3 columns</div>
+                                            <div class="paragraph">3 columns</div>
                                         </td>
                                     </tr>
                                 </table>
@@ -274,7 +286,7 @@
                                 <table width="100%" cellpadding="10" cellspacing="0">
                                     <tr>
                                         <td bgcolor="#cccccc">
-                                            <div class="p">3 columns</div>
+                                            <div class="paragraph">3 columns</div>
                                         </td>
                                     </tr>
                                 </table>
@@ -290,7 +302,7 @@
                                 <table width="100%" cellpadding="10" cellspacing="0">
                                     <tr>
                                         <td bgcolor="#cccccc">
-                                            <div class="p">3 columns</div>
+                                            <div class="paragraph">3 columns</div>
                                         </td>
                                     </tr>
                                 </table>
@@ -316,7 +328,7 @@
                                             <table width="100%" cellpadding="10" cellspacing="0">
                                                 <tr>
                                                     <td bgcolor="#cccccc">
-                                                        <div class="p">2+2 columns</div>
+                                                        <div class="paragraph">2+2 columns</div>
                                                     </td>
                                                 </tr>
                                             </table>
@@ -325,7 +337,7 @@
                                             <table width="100%" cellpadding="10" cellspacing="0">
                                                 <tr>
                                                     <td bgcolor="#cccccc">
-                                                        <div class="p">2+2 columns</div>
+                                                        <div class="paragraph">2+2 columns</div>
                                                     </td>
                                                 </tr>
                                             </table>
@@ -347,7 +359,7 @@
                                             <table width="100%" cellpadding="10" cellspacing="0">
                                                 <tr>
                                                     <td bgcolor="#cccccc">
-                                                        <div class="p">2+2 columns</div>
+                                                        <div class="paragraph">2+2 columns</div>
                                                     </td>
                                                 </tr>
                                             </table>
@@ -356,7 +368,7 @@
                                             <table width="100%" cellpadding="10" cellspacing="0">
                                                 <tr>
                                                     <td bgcolor="#cccccc">
-                                                        <div class="p">2+2 columns</div>
+                                                        <div class="paragraph">2+2 columns</div>
                                                     </td>
                                                 </tr>
                                             </table>
@@ -382,7 +394,7 @@
                                 <table width="100%" cellpadding="10" cellspacing="0">
                                     <tr>
                                         <td bgcolor="#cccccc">
-                                            <div class="p">4 columns</div>
+                                            <div class="paragraph">4 columns</div>
                                         </td>
                                     </tr>
                                 </table>
@@ -398,7 +410,7 @@
                                 <table width="100%" cellpadding="10" cellspacing="0">
                                     <tr>
                                         <td bgcolor="#cccccc">
-                                            <div class="p">4 columns</div>
+                                            <div class="paragraph">4 columns</div>
                                         </td>
                                     </tr>
                                 </table>
@@ -414,7 +426,7 @@
                                 <table width="100%" cellpadding="10" cellspacing="0">
                                     <tr>
                                         <td bgcolor="#cccccc">
-                                            <div class="p">4 columns</div>
+                                            <div class="paragraph">4 columns</div>
                                         </td>
                                     </tr>
                                 </table>
@@ -430,7 +442,7 @@
                                 <table width="100%" cellpadding="10" cellspacing="0">
                                     <tr>
                                         <td bgcolor="#cccccc">
-                                            <div class="p">4 columns</div>
+                                            <div class="paragraph">4 columns</div>
                                         </td>
                                     </tr>
                                 </table>
@@ -447,7 +459,7 @@
                     Our Contacts
                     <br><span style="color:#bababa;">&ndash;</span>
                 </div>
-                <div class="p" align="center">
+                <div class="paragraph" align="center">
                     8 800 333-24-61
                     <br>
                     <a href="mailto:help@olymptrade.com" target="_blank"><span>email@democompany.com</span></a>
