@@ -67,6 +67,7 @@
 
 	.content {
 		background-color: #ffffff;
+		padding: 30px 30px 0 30px;
 	}
 
 	.cover {
@@ -79,9 +80,17 @@
 		display: block;
 	}
 
+	.credits {
+		padding: 0 10px 30px 10px;
+	}
+
 	.credits p {
 		color: #999999;
 		text-align: center;
+	}
+
+	.footer {
+		padding: 30px 10px;
 	}
 
 	.footer div {
@@ -94,6 +103,10 @@
 		color: #666666;
 		line-height: 1.2em;
 		text-align: left;
+	}
+
+	.header {
+		padding: 20px 30px;
 	}
 
 	.two-columns,
@@ -118,7 +131,7 @@
 	.two-columns .inner td,
 	.three-columns .inner td,
 	.four-columns .inner td {
-		padding:10px;
+		padding: 10px;
 	}
 
 	.newsletter {
@@ -143,10 +156,6 @@
 		.three-columns {
 			padding-left: 0 !important;
 			padding-right: 0 !important;
-		}
-		.three-columns .inner > tbody > tr > td {
-			padding: 10px;
-			/* 9px collision fix */
 		}
 		.column {
 			max-width: 100% !important;
@@ -187,7 +196,7 @@
     <![endif]-->
 	<table class="newsletter" align="center" width="100%" cellpadding="30" cellspacing="0">
 		<tr>
-			<td class="header" style="padding:20px 30px;">
+			<td class="one-column header" style="width:600px !important;">
 				<a href="#" target="_blank">
 					<img src="https://placeholdit.imgix.net/~text?txtsize=14&txt=Logo&w=120&h=60">
 				</a>
@@ -204,7 +213,7 @@
 			<td class="one-column content" style="padding-bottom:0;">
 				<div class="h1">Paragraph Heading</div>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-				dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 				<div align="center">
 					<div class="button" style="width:150px;">
 						<table cellpadding="10" cellspacing="0">
@@ -293,7 +302,7 @@
             <table width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;"><tr><td width="50%">
             <![endif]-->
 				<div class="column">
-					<table class="inner" width="100%" cellpadding="9" cellspacing="0">
+					<table class="inner" width="100%" cellpadding="10" cellspacing="0">
 						<tr>
 							<td>
 								<table width="100%" cellpadding="10" cellspacing="0">
@@ -522,7 +531,7 @@
 			</td>
 		</tr>
 		<tr>
-			<td class="one-column footer" style="padding-bottom:0;">
+			<td class="footer">
 				<div class="h1">
 					Our Contacts
 					<br>
@@ -560,7 +569,7 @@
 			</td>
 		</tr>
 		<tr>
-			<td class="one-column credits">
+			<td class="credits">
 				<p>You are receiving this email because you subscribed on our website to the Widget Newsletter. To unsubscribe
 					<a href="#" target="_blank">
 						<span>click here</span>
