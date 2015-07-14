@@ -22,7 +22,6 @@
 	}
 
 	p {
-		margin: 1em 0;
 		font-family: 'roboto-light', arial;
 		font-size: 14px;
 		color: #666666;
@@ -67,7 +66,7 @@
 
 	.content {
 		background-color: #ffffff;
-		padding: 30px 30px 0 30px;
+		padding: 20px 0 0 0;
 	}
 
 	.cover {
@@ -109,11 +108,23 @@
 		padding: 20px 30px;
 	}
 
+		.header a {
+			color:#999999 !important;
+			font-size:12px;
+		}
+
+		.header a span { color:#999999; }
+
+	.one-column,
 	.two-columns,
 	.three-columns,
 	.four-columns {
 		text-align: center;
 		font-size: 0;
+	}
+
+	.one-column .column {
+		max-width: 560px;
 	}
 
 	.two-columns .column {
@@ -148,10 +159,7 @@
 	}
 
 	@media only screen and (max-width: 400px) {
-		.one-column {
-			padding-left: 10px !important;
-			padding-right: 10px !important;
-		}
+		.one-column,
 		.two-columns,
 		.three-columns {
 			padding-left: 0 !important;
@@ -166,11 +174,13 @@
 	}
 
 	@media screen and (min-width: 401px) and (max-width: 600px) {
+
+		.two-columns .column,
+		.four-columns .column {
+			max-width: 50% !important;
+		}
 		.three-columns .column {
 			max-width: 33% !important;
-		}
-		.two-columns .column {
-			max-width: 50% !important;
 		}
 	}
 
@@ -181,10 +191,9 @@
 	}
 
 </style>
-<!-- Mutlicolumn container padding fix -->
 <!--[if (gte mso 9)|(IE)]>
     <style>
-        .two-columns, .three-columns, .four-columns {
+        .one-column, .two-columns, .three-columns, .four-columns {
             padding-left:20px !important;
             padding-right:20px !important;
         }
@@ -196,10 +205,34 @@
     <![endif]-->
 	<table class="newsletter" align="center" width="100%" cellpadding="30" cellspacing="0">
 		<tr>
-			<td class="one-column header" style="width:600px !important;">
-				<a href="#" target="_blank">
-					<img src="https://placeholdit.imgix.net/~text?txtsize=14&txt=Logo&w=120&h=60">
-				</a>
+			<td dir="rtl" class="two-columns header" style="padding:10px 0;">
+				<!--[if (gte mso 9)|(IE)]>
+            <table width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;"><tr><td valign="top" width="35%">
+            <![endif]-->
+				<div class="column" style="max-width:180px;">
+					<table class="inner" width="100%" cellpadding="10" cellspacing="0">
+						<tr>
+							<td>
+								<div class="paragraph" style="text-align:center;">
+									<a href="#" target="_blank"><span>Открыть письмо в браузере</span></a>
+								</div>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<!--[if (gte mso 9)|(IE)]></td><td valign="top" width="65%"><![endif]-->
+				<div class="column" style="max-width:380px;">
+					<table class="inner" width="100%" cellpadding="10" cellspacing="0">
+						<tr>
+							<td align="left">
+								<a href="#" target="_blank">
+									<img src="https://placeholdit.imgix.net/~text?txtsize=14&txt=Logo&w=120&h=60">
+								</a>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
 			</td>
 		</tr>
 		<tr>
@@ -210,47 +243,53 @@
 			</td>
 		</tr>
 		<tr>
-			<td class="one-column content" style="padding-bottom:0;">
-				<div class="h1">Paragraph Heading</div>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-					dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				<div align="center">
-					<div class="button" style="width:150px;">
-						<table cellpadding="10" cellspacing="0">
-							<tr>
-								<td bgcolor="#666666" style="padding:10px 20px; border-radius:50px;">
-									<div><b><a href="#" target="_blank"><span>Button&nbsp;Example</span></a></b></div>
-								</td>
-							</tr>
-						</table>
-					</div>
-					<div class="button" style="width:150px;">
-						<table cellpadding="10" cellspacing="0">
-							<tr>
-								<td bgcolor="#666666" style="padding:10px 20px;">
-									<div><b><a href="#" target="_blank"><span>Button&nbsp;Example</span></a></b></div>
-								</td>
-							</tr>
-						</table>
-					</div>
-					<div class="button" style="width:150px;">
-						<table cellpadding="10" cellspacing="0">
-							<tr>
-								<td bgcolor="#666666" style="padding:10px 20px; border-radius:50px;">
-									<div><b><a href="#" target="_blank"><span>Button&nbsp;Example</span></a></b></div>
-								</td>
-							</tr>
-						</table>
-					</div>
+			<td class="one-column content">
+				<div class="column">
+					<table class="inner" width="100%" cellpadding="10" cellspacing="0">
+						<tr>
+							<td>
+								<div class="h1">Paragraph Heading</div>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+									dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+								<div align="center">
+									<div class="button" style="width:150px;">
+										<table cellpadding="10" cellspacing="0">
+											<tr>
+												<td bgcolor="#666666" style="padding:10px 20px; border-radius:50px;">
+													<div><b><a href="#" target="_blank"><span>Button&nbsp;Example</span></a></b></div>
+												</td>
+											</tr>
+										</table>
+									</div>
+									<div class="button" style="width:150px;">
+										<table cellpadding="10" cellspacing="0">
+											<tr>
+												<td bgcolor="#666666" style="padding:10px 20px;">
+													<div><b><a href="#" target="_blank"><span>Button&nbsp;Example</span></a></b></div>
+												</td>
+											</tr>
+										</table>
+									</div>
+									<div class="button" style="width:150px;">
+										<table cellpadding="10" cellspacing="0">
+											<tr>
+												<td bgcolor="#666666" style="padding:10px 20px; border-radius:50px;">
+													<div><b><a href="#" target="_blank"><span>Button&nbsp;Example</span></a></b></div>
+												</td>
+											</tr>
+										</table>
+									</div>
+								</div>
+								<div class="h1"><br>Markered List</div>
+								<p>&ndash;&nbsp; Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+								<p>&ndash;&nbsp; Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+								<p>&ndash;&nbsp; Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+								<p>&ndash;&nbsp; Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+								<div class="h1"><br>Multicolumns</div>
+							</td>
+						</tr>
+					</table>
 				</div>
-				<br>
-				<div class="h1">Markered List</div>
-				<p>&ndash;&nbsp; Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-				<p>&ndash;&nbsp; Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-				<p>&ndash;&nbsp; Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-				<p>&ndash;&nbsp; Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-				<br>
-				<div class="h1">Multicolumns</div>
 			</td>
 		</tr>
 		<tr>
@@ -263,7 +302,7 @@
 						<tr>
 							<td align="left">
 								<a href="#" target="_blank">
-									<img src="https://placeholdit.imgix.net/~text?txtsize=36&txt=260x160&w=260&h=160">
+									<img style="width:100%; height:auto; display:block;" src="https://placeholdit.imgix.net/~text?txtsize=36&txt=260x160&w=520&h=320">
 								</a>
 							</td>
 						</tr>
@@ -391,7 +430,7 @@
 			</td>
 		</tr>
 		<tr>
-			<td bgcolor="#ffffff" class="two-columns" style="padding:0;">
+			<td bgcolor="#ffffff" class="two-columns" style="padding:0 0 20px 0;">
 				<!--[if (gte mso 9)|(IE)]>
             <table width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;"><tr><td width="50%">
             <![endif]-->
@@ -460,77 +499,6 @@
 			</td>
 		</tr>
 		<tr>
-			<td bgcolor="#ffffff" class="four-columns" style="padding:0 0 30px 0;">
-				<!--[if (gte mso 9)|(IE)]>
-            <table width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;"><tr><td width="25%">
-            <![endif]-->
-				<div class="column">
-					<table class="inner" width="100%" cellpadding="10" cellspacing="0">
-						<tr>
-							<td>
-								<table width="100%" cellpadding="10" cellspacing="0">
-									<tr>
-										<td bgcolor="#cccccc">
-											<div class="paragraph">4 columns</div>
-										</td>
-									</tr>
-								</table>
-							</td>
-						</tr>
-					</table>
-				</div>
-				<!--[if (gte mso 9)|(IE)]></td><td width="25%"><![endif]-->
-				<div class="column">
-					<table class="inner" width="100%" cellpadding="10" cellspacing="0">
-						<tr>
-							<td>
-								<table width="100%" cellpadding="10" cellspacing="0">
-									<tr>
-										<td bgcolor="#cccccc">
-											<div class="paragraph">4 columns</div>
-										</td>
-									</tr>
-								</table>
-							</td>
-						</tr>
-					</table>
-				</div>
-				<!--[if (gte mso 9)|(IE)]></td><td width="25%"><![endif]-->
-				<div class="column">
-					<table class="inner" width="100%" cellpadding="10" cellspacing="0">
-						<tr>
-							<td>
-								<table width="100%" cellpadding="10" cellspacing="0">
-									<tr>
-										<td bgcolor="#cccccc">
-											<div class="paragraph">4 columns</div>
-										</td>
-									</tr>
-								</table>
-							</td>
-						</tr>
-					</table>
-				</div>
-				<!--[if (gte mso 9)|(IE)]></td><td width="25%"><![endif]-->
-				<div class="column">
-					<table class="inner" width="100%" cellpadding="10" cellspacing="0">
-						<tr>
-							<td>
-								<table width="100%" cellpadding="10" cellspacing="0">
-									<tr>
-										<td bgcolor="#cccccc">
-											<div class="paragraph">4 columns</div>
-										</td>
-									</tr>
-								</table>
-							</td>
-						</tr>
-					</table>
-				</div>
-				<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
-			</td>
-		</tr>
-		<tr>
 			<td class="footer">
 				<div class="h1">
 					Our Contacts
@@ -546,7 +514,7 @@
 				</div>
 				<br>
 				<div align="center">
-					<table align="center" cellpadding="10" cellspacing="0">
+					<table align="center" cellpadding="10" cellspacing="0" style="margin:0 auto;">
 						<tr>
 							<td>
 								<a href="#" target="_blank">
