@@ -2,8 +2,8 @@
 Экспериментальный фреймворк, набор тестов и примеров кода для вертски email рассылок
 
 #Email Clients & Web Interfaces Support
-- MS Outlook 2007-2010
-- MS Outlook 2011-2013
+- MS Outlook 2003-2007
+- MS Outlook 2010-2013
 - MS Office 365
 - Outlook.com (web, iOS, android)
 - Thunderbird (windows)
