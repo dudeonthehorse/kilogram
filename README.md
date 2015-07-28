@@ -1,5 +1,5 @@
 # Email
-<a hef="http://dudeonthehorse.github.io/Email/">View Demo</a>
+<a href="http://dudeonthehorse.github.io/Email/">View Demo</a>
 
 Экспериментальный фреймворк, набор тестов и примеров кода для вертски email рассылок.
 
