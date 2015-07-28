@@ -4,6 +4,10 @@
 		margin: 0;
 	}
 
+	div, p, td {
+		-webkit-font-smoothing:antialiased;
+	}
+
 	a {
 		color: #0077cc !important;
 		text-decoration: underline;
@@ -22,7 +26,7 @@
 	}
 
 	p {
-		font-family: arial;
+		font-family: 'roboto-regular', arial;
 		font-size: 14px;
 		color: #333333;
 		line-height: 1.4em;
@@ -31,7 +35,7 @@
 	}
 
 	.paragraph {
-		font-family: arial;
+		font-family: 'roboto-regular', arial;
 		font-size: 14px;
 		color: #333333;
 		line-height: 1.4em;
@@ -46,11 +50,10 @@
 
 	.button table {
 		border-collapse: separate !important;
-		border: #ffffff 5px solid;
 	}
 
 	.button div {
-		font-family: arial;
+		font-family: 'roboto-regular', arial;
 		font-size: 14px;
 		text-align: center;
 	}
@@ -86,7 +89,8 @@
 	}
 
 	.cover {
-		padding: 0;
+		padding: 30px 0 0 0;
+		background-color:#ffffff;
 	}
 
 	.cover img {
@@ -117,30 +121,30 @@
 	}
 
 	.h1 {
-		font-family: arial;
-		font-size: 24px;
+		font-family: 'roboto-regular', arial;
+		font-size: 20px;
 		color: #333333;
 		line-height: 1.2em;
 		text-align: left;
+		text-transform: uppercase;
 	}
 
 	.header {
-		padding: 20px 0;
+		padding: 10px 0;
 	}
 
 	.header a {
-		color: #999999 !important;
 		font-size: 12px;
 	}
 
-	.header a span {
-		color: #999999;
+	.quote {
+		font-style: italic;
+		color:#999999;
 	}
 
 	.one-column,
 	.two-columns,
-	.three-columns,
-	.four-columns {
+	.three-columns {
 		text-align: center;
 		font-size: 0;
 	}
@@ -155,17 +159,6 @@
 
 	.three-columns .column {
 		max-width: 186px;
-	}
-
-	.four-columns .column {
-		max-width: 140px;
-	}
-
-	.one-column .inner td,
-	.two-columns .inner td,
-	.three-columns .inner td,
-	.four-columns .inner td {
-		padding: 10px;
 	}
 
 	.newsletter {
@@ -229,17 +222,17 @@
     <![endif]-->
 	<table class="newsletter" align="center" width="100%" cellpadding="30" cellspacing="0">
 		<tr>
-			<td dir="rtl" class="two-columns header" style="padding:10px 0;">
+			<td dir="rtl" class="two-columns header">
 				<!--[if (gte mso 9)|(IE)]>
-            	<table width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;"><tr><td valign="top" width="35%">
+            	<table width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;"><tr><td valign="bottom" width="35%">
             	<![endif]-->
-				<div class="column" style="max-width:180px;">
+				<div class="column" style="max-width:130px; vertical-align:bottom;">
 					<table class="inner" width="100%" cellpadding="10" cellspacing="0">
 						<tr>
 							<td>
-								<div class="paragraph" style="text-align:center;">
-									<a href="#" target="_blank">
-										<span>Открыть письмо в браузере</span>
+								<div dir="ltr" class="paragraph" style="text-align:center;">
+									<a href="https://github.com/dudeonthehorse/Email" target="_blank">
+										<span>Fork me on GitHub</span>
 									</a>
 								</div>
 							</td>
@@ -247,13 +240,15 @@
 					</table>
 				</div>
 				<!--[if (gte mso 9)|(IE)]></td><td valign="top" width="65%"><![endif]-->
-				<div class="column" style="max-width:380px;">
+				<div class="column" style="max-width:430px;">
 					<table class="inner" width="100%" cellpadding="10" cellspacing="0">
 						<tr>
-							<td align="left">
-								<a href="#" target="_blank">
-									<img src="https://placeholdit.imgix.net/~text?txtsize=14&txt=Logo&w=120&h=60">
-								</a>
+							<td>
+								<div dir="ltr">
+									<a href="https://github.com/dudeonthehorse/Email" target="_blank">
+										<img src="https://placeholdit.imgix.net/~text?txtsize=12&txt=Logo&w=150&h=40" width="150" height="40">
+									</a>
+								</div>
 							</td>
 						</tr>
 					</table>
@@ -261,10 +256,16 @@
 				<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
 			</td>
 		</tr>
+	</table>
+	<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+	<!--[if (gte mso 9)|(IE)]>
+    <table align="center" width="600" cellpadding="0" cellspacing="0" style="border-collapse:collapse;"><tr><td>
+    <![endif]-->
+	<table class="newsletter" align="center" width="100%" cellpadding="30" cellspacing="0" style="box-shadow:#dddddd 0 0 5px;">
 		<tr>
 			<td class="cover">
-				<a href="#" target="_blank">
-					<img src="https://placeholdit.imgix.net/~text?txtsize=36&txt=Cover&w=600&h=200">
+				<a href="https://github.com/dudeonthehorse/Email" target="_blank">
+					<img src="images/header.png">
 				</a>
 			</td>
 		</tr>
@@ -274,44 +275,37 @@
 					<table class="inner" width="100%" cellpadding="10" cellspacing="0">
 						<tr>
 							<td>
-								<div class="h1">Paragraph Heading</div>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-									dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+								<div class="h1">CSS Inliner</div>
+								<p>Используйте <a href="http://inliner.cm/" target="_blank"><span>инлайнер</span></a> перед использованием верстки на продакшене или непосредственно перед отправкой письма через истему рассылки</p>
+								<p class="quote">&laquo;Writing inline CSS can be a pain, so we built a tool that'll do the hard work for you. Just paste your HTML below, and we'll move all your styles inline.&raquo;</p>
 								<div align="center">
-									<div class="button" style="max-width:150px;">
-										<table width="100%" cellpadding="10" cellspacing="0">
-											<tr>
-												<td bgcolor="#666666" style="padding:10px 20px; border-radius:50px;">
-													<div><b><a href="#" target="_blank"><span>Button&nbsp;Example</span></a></b></div>
-												</td>
-											</tr>
-										</table>
-									</div>
-									<div class="button" style="max-width:150px;">
-										<table width="100%" cellpadding="10" cellspacing="0">
-											<tr>
-												<td bgcolor="#666666" style="padding:10px 20px;">
-													<div><b><a href="#" target="_blank"><span>Button&nbsp;Example</span></a></b></div>
-												</td>
-											</tr>
-										</table>
-									</div>
 									<div class="button button-transparent" style="max-width:150px;">
 										<table width="100%" cellpadding="10" cellspacing="0">
 											<tr>
 												<td bgcolor="#ffffff" style="padding:8px 18px; border-radius:50px; border:#666666 2px solid;">
-													<div><b><a href="#" target="_blank"><span>Button&nbsp;Example</span></a></b></div>
+													<div><b><a href="http://inliner.cm/" target="_blank"><span>Try Inliner</span></a></b></div>
 												</td>
 											</tr>
 										</table>
 									</div>
 								</div>
-								<div class="h1">
-									<br>Markered List</div>
-								<p>&ndash;&nbsp; Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-								<p>&ndash;&nbsp; Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-								<p>&ndash;&nbsp; Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-								<p>&ndash;&nbsp; Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+								<div class="h1"><br>Email Clients & Web Interfaces Support</div>
+								<p>&ndash;&nbsp; MS Outlook 2003-2007</p>
+								<p>&ndash;&nbsp; MS Outlook 2010-2013</p>
+								<p>&ndash;&nbsp; MS Office 365</p>
+								<p>&ndash;&nbsp; Outlook.com (web, iOS, android)</p>
+								<p>&ndash;&nbsp; Thunderbird (windows)</p>
+								<p>&ndash;&nbsp; AOL (iOS)</p>
+								<p>&ndash;&nbsp; Yahoo! (web, iOS)</p>
+								<p>&ndash;&nbsp; Gmail (web, iOS, android)</p>
+								<p>&ndash;&nbsp; Mail.ru (web, iOS)</p>
+								<p>&ndash;&nbsp; Rambler.ru (web)</p>
+								<p>&ndash;&nbsp; Yandex (web, iOS, android)</p>
+								<p>&ndash;&nbsp; My.com (iOS, android)</p>
+								<p>&ndash;&nbsp; Sparrow (OSX, iOS)</p>
+								<p>&ndash;&nbsp; Airmail (OSX)</p>
+								<p>&ndash;&nbsp; Apple Mail (OSX, iOS)</p>
+								<p>&ndash;&nbsp; Mailbox (OSX, iOS, android)</p>
 								<div class="h1">
 									<br>Multicolumns
 								</div>
@@ -322,7 +316,7 @@
 			</td>
 		</tr>
 		<tr>
-			<td bgcolor="#ffffff" class="two-columns" style="padding:0;">
+			<td class="two-columns" style="padding:0; background-color:#ffffff;">
 				<!--[if (gte mso 9)|(IE)]>
             	<table width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;"><tr><td valign="top" width="50%">
             	<![endif]-->
@@ -331,7 +325,7 @@
 						<tr>
 							<td align="left">
 								<a href="#" target="_blank">
-									<img class="retina-image" style="width:100%; height:auto; display:block;" src="https://placeholdit.imgix.net/~text?txtsize=64&txt=Retina Flex Image&w=520&h=320">
+									<img class="retina-image" style="width:100%; height:auto; display:block;" src="images/elem1.png">
 								</a>
 							</td>
 						</tr>
@@ -365,7 +359,7 @@
 			</td>
 		</tr>
 		<tr>
-			<td bgcolor="#ffffff" class="two-columns" style="padding:0;">
+			<td class="two-columns" style="padding:0; background-color:#ffffff;">
 				<!--[if (gte mso 9)|(IE)]>
             	<table width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;"><tr><td width="50%">
             	<![endif]-->
@@ -404,7 +398,7 @@
 			</td>
 		</tr>
 		<tr>
-			<td bgcolor="#ffffff" class="three-columns" style="padding:0;">
+			<td class="three-columns" style="padding:0; background-color:#ffffff;">
 				<!--[if (gte mso 9)|(IE)]>
             	<table width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;"><tr><td width="33%">
             	<![endif]-->
@@ -459,7 +453,7 @@
 			</td>
 		</tr>
 		<tr>
-			<td bgcolor="#ffffff" class="two-columns" style="padding:0 0 20px 0;">
+			<td class="two-columns" style="padding:0 0 20px 0; background-color:#ffffff;">
 				<!--[if (gte mso 9)|(IE)]>
             	<table width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;"><tr><td width="50%">
             	<![endif]-->
@@ -527,6 +521,12 @@
 				<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
 			</td>
 		</tr>
+	</table>
+	<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+	<!--[if (gte mso 9)|(IE)]>
+    <table align="center" width="600" cellpadding="0" cellspacing="0" style="border-collapse:collapse;"><tr><td>
+    <![endif]-->
+	<table class="newsletter" align="center" width="100%" cellpadding="30" cellspacing="0">
 		<tr>
 			<td class="one-column footer">
 				<div class="column">
@@ -534,15 +534,13 @@
 						<tr>
 							<td>
 								<div class="h1">
-									Our Contacts
+									Contact Me
 									<br>
 									<span style="color:#bababa;">&ndash;</span>
 								</div>
 								<div class="paragraph">
-									8 800 333-24-61
-									<br>
-									<a href="mailto:help@olymptrade.com" target="_blank">
-										<span>email@democompany.com</span>
+									<a href="dudeonthehorse@gmail.com">
+										<span>dudeonthehorse@gmail.com</span>
 									</a>
 								</div>
 								<br>
@@ -550,18 +548,33 @@
 									<table align="center" cellpadding="10" cellspacing="0" style="margin:0 auto;">
 										<tr>
 											<td>
-												<a href="#" target="_blank">
-													<img width="42" height="42" src="https://placeholdit.imgix.net/~text?txtsize=14&txt=vk&w=42&h=42">
+												<a href="mailto:dudeonthehorse@gmail.com">
+													<img width="24" height="24" src="icons/mail.png">
 												</a>
 											</td>
 											<td>
-												<a href="#" target="_blank">
-													<img width="42" height="42" src="https://placeholdit.imgix.net/~text?txtsize=14&txt=fb&w=42&h=42">
+												<a href="https://plus.google.com/u/0/114643441727114040398" target="_blank">
+													<img width="24" height="24" src="icons/google.png">
 												</a>
 											</td>
 											<td>
-												<a href="#" target="_blank">
-													<img width="42" height="42" src="https://placeholdit.imgix.net/~text?txtsize=14&txt=tw&w=42&h=42">
+												<a href="https://vk.com/dudeonthehorse" target="_blank">
+													<img width="24" height="24" src="icons/vkontakte.png">
+												</a>
+											</td>
+											<td>
+												<a href="https://www.facebook.com/dudeonthehorse" target="_blank">
+													<img width="24" height="24" src="icons/facebook.png">
+												</a>
+											</td>
+											<td>
+												<a href="https://twitter.com/dudeonthehorse" target="_blank">
+													<img width="24" height="24" src="icons/twitter.png">
+												</a>
+											</td>
+											<td>
+												<a href="https://github.com/dudeonthehorse" target="_blank">
+													<img width="24" height="24" src="icons/github.png">
 												</a>
 											</td>
 										</tr>
@@ -580,10 +593,8 @@
 						<tr>
 							<td>
 								<div class="paragraph">
-									You are receiving this email because you subscribed on our website to the Widget Newsletter. To unsubscribe
-									<a href="#" target="_blank">
-										<span>click here</span>
-									</a>
+									Social icons by <a href="http://www.socicon.com/" target="_blank"><span>Socicon</span></a><br><br>
+									You are receiving this email because I want. Ha-ha-ha-ha! To unsubscribe <a href="https://github.com/dudeonthehorse/Email" target="_blank"><span>click here</span></a>
 								</div>
 							</td>
 						</tr>
