@@ -1,5 +1,200 @@
 <meta charset="utf-8">
-<link rel="stylesheet" type="text/css" href="css/styles.css" />
+<style>
+	a {
+		color: #0077cc !important;
+		text-decoration: underline;
+	}
+
+	a img {
+		border: 0;
+	}
+
+	a span {
+		color: #0077cc;
+	}
+
+	body {
+		margin: 0;
+	}
+
+	div,
+	p {
+		-webkit-font-smoothing: antialiased;
+	}
+
+	table {
+		border-collapse: collapse;
+	}
+
+	p,
+	.paragraph {
+		font-family: 'helvetica', arial;
+		font-size: 14px;
+		color: #333333;
+		line-height: 1.4em;
+		text-align: left;
+	}
+
+	p {
+		margin: 1em 0;
+	}
+
+	.button {
+		width: 100%;
+		display: inline-block;
+		vertical-align: top;
+	}
+
+	.button table {
+		border-collapse: separate !important;
+	}
+
+	.button div {
+		font-family: 'helvetica-light', arial;
+		font-size: 14px;
+		text-align: center;
+	}
+
+	.button a {
+		color: #ffffff !important;
+		text-decoration: none;
+	}
+
+	.button span {
+		color: #ffffff;
+	}
+
+	.button-transparent a {
+		color: #666666 !important;
+	}
+
+	.button-transparent span {
+		color: #666666;
+	}
+
+	.column {
+		width: 100%;
+		display: inline-block;
+		vertical-align: top;
+		font-size: 14px;
+		text-align: left;
+	}
+
+	.content {
+		background-color: #ffffff;
+		padding: 20px 0 0 0;
+	}
+
+	.cover {
+		padding: 30px 0 0 0;
+		background-color: #ffffff;
+	}
+
+	.cover img {
+		width: 100%;
+		height: auto;
+		display: block;
+	}
+
+	.credits {
+		padding: 20px 0;
+	}
+
+	.credits .paragraph {
+		color: #999999;
+		font-size: 12px;
+		text-align: center;
+	}
+
+	.footer {
+		padding: 20px 0;
+	}
+
+	.footer .h1,
+	.footer .paragraph {
+		text-align: center;
+	}
+
+	.h1 {
+		font-family: 'helvetica-light', arial;
+		font-size: 24px;
+		color: #333333;
+		line-height: 1.2em;
+		text-align: left;
+	}
+
+	.header {
+		padding: 10px 0;
+	}
+
+	.header .paragraph {
+		font-size: 12px;
+	}
+
+	.quote {
+		font-style: italic;
+		color: #999999;
+	}
+
+	/* Multicolumns */
+
+	.one-column,
+	.two-columns,
+	.three-columns {
+		text-align: center;
+		font-size: 0;
+	}
+
+	.one-column .column {
+		max-width: 560px;
+	}
+
+	.two-columns .column {
+		max-width: 280px;
+	}
+
+	.three-columns .column {
+		max-width: 186px;
+	}
+
+	/* Body of the Newsletter */
+
+	.newsletter {
+		margin: 0 auto;
+		max-width: 600px;
+	}
+
+	.wrapper {
+		width: 100%;
+		background-color: #f4f4f4;
+		table-layout: fixed;
+		-webkit-text-size-adjust: 100%;
+		-ms-text-size-adjust: 100%;
+	}
+
+	/* Media Queries */
+
+	@media only screen and (max-width: 400px) {
+		.column {
+			max-width: 100% !important;
+		}
+	}
+
+	@media screen and (min-width: 401px) and (max-width: 600px) {
+		.two-columns .column {
+			max-width: 50% !important;
+		}
+		.three-columns .column {
+			max-width: 33% !important;
+		}
+	}
+
+	@media screen and (min-width: 600px) {
+		.newsletter {
+			width: 600px !important;
+		}
+	}
+</style>
 <!--[if (gte mso 9)|(IE)]>
     <style>
 		.button table {
@@ -64,7 +259,7 @@
 		<tr>
 			<td class="cover">
 				<a href="https://github.com/dudeonthehorse/Email" target="_blank">
-					<img src="images/header.png">
+					<img src="images/cover.png">
 				</a>
 			</td>
 		</tr>
@@ -75,7 +270,10 @@
 						<tr>
 							<td>
 								<div class="h1">CSS Inliner</div>
-								<p>Используйте <a href="http://inliner.cm/" target="_blank"><span>инлайнер</span></a> перед использованием верстки на продакшене или непосредственно перед отправкой письма через истему рассылки</p>
+								<p>Используйте
+									<a href="http://inliner.cm/" target="_blank">
+										<span>инлайнер</span>
+									</a> перед использованием верстки на продакшене или непосредственно перед отправкой письма через истему рассылки</p>
 								<p class="quote">&laquo;Writing inline CSS can be a pain, so we built a tool that'll do the hard work for you. Just paste your HTML below, and we'll move all your styles inline.&raquo;</p>
 								<div align="center">
 									<div class="button button-transparent" style="max-width:150px;">
@@ -88,7 +286,8 @@
 										</table>
 									</div>
 								</div>
-								<div class="h1"><br>Email Clients & Web Interfaces Support</div>
+								<div class="h1">
+									<br>Email Clients & Web Interfaces Support</div>
 								<p>&ndash;&nbsp; MS Outlook 2003-2007</p>
 								<p>&ndash;&nbsp; MS Outlook 2010-2013</p>
 								<p>&ndash;&nbsp; MS Office 365</p>
@@ -470,8 +669,15 @@
 						<tr>
 							<td>
 								<div class="paragraph">
-									Social icons by <a href="http://www.socicon.com/" target="_blank"><span>Socicon</span></a><br><br>
-									You are receiving this email because I want. Ha-ha-ha-ha! To unsubscribe <a href="https://github.com/dudeonthehorse/Email" target="_blank"><span>click here</span></a>
+									Social icons by
+									<a href="http://www.socicon.com/" target="_blank">
+										<span>Socicon</span>
+									</a>
+									<br>
+									<br> You are receiving this email because I want. Ha-ha-ha-ha! To unsubscribe
+									<a href="https://github.com/dudeonthehorse/Email" target="_blank">
+										<span>click here</span>
+									</a>
 								</div>
 							</td>
 						</tr>
