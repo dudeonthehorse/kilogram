@@ -1,5 +1,7 @@
 <meta charset="utf-8">
 <style>
+	/* Main Styles */
+
 	a {
 		color: #0077cc !important;
 		text-decoration: underline;
@@ -39,6 +41,8 @@
 		margin: 1em 0;
 	}
 
+	/* Buttons */
+
 	.button {
 		width: 100%;
 		display: inline-block;
@@ -72,13 +76,7 @@
 		color: #666666;
 	}
 
-	.column {
-		width: 100%;
-		display: inline-block;
-		vertical-align: top;
-		font-size: 14px;
-		text-align: left;
-	}
+	/* Newsletter Modules */
 
 	.content {
 		background-color: #ffffff;
@@ -145,6 +143,14 @@
 		font-size: 0;
 	}
 
+	.column {
+		width: 100%;
+		display: inline-block;
+		vertical-align: top;
+		font-size: 14px;
+		text-align: left;
+	}
+
 	.one-column .column {
 		max-width: 560px;
 	}
@@ -185,7 +191,7 @@
 			max-width: 50% !important;
 		}
 		.three-columns .column {
-			max-width: 33% !important;
+			max-width: 33.33% !important;
 		}
 	}
 
@@ -200,7 +206,11 @@
 		.button table {
 			width:150px !important;
 		}
-        .one-column, .two-columns, .three-columns, .four-columns {
+		.cover img {
+			width:600px !important;
+			height:auto !important;
+		}
+        .one-column, .two-columns, .three-columns {
             padding-left:20px !important;
             padding-right:20px !important;
         }
@@ -214,7 +224,7 @@
 	<!--[if (gte mso 9)|(IE)]>
     <table align="center" width="600" cellpadding="0" cellspacing="0" style="border-collapse:collapse;"><tr><td>
     <![endif]-->
-	<table class="newsletter" align="center" width="100%" cellpadding="30" cellspacing="0">
+	<table class="newsletter" align="center" width="100%" cellpadding="0" cellspacing="0">
 		<tr>
 			<td dir="rtl" class="two-columns header">
 				<!--[if (gte mso 9)|(IE)]>
@@ -255,7 +265,7 @@
 	<!--[if (gte mso 9)|(IE)]>
     <table align="center" width="600" cellpadding="0" cellspacing="0" style="border-collapse:collapse;"><tr><td>
     <![endif]-->
-	<table class="newsletter" align="center" width="100%" cellpadding="30" cellspacing="0" style="box-shadow:#dddddd 0 0 5px;">
+	<table class="newsletter" align="center" width="100%" cellpadding="0" cellspacing="0" style="box-shadow:#dddddd 0 0 5px;">
 		<tr>
 			<td class="cover">
 				<a href="https://github.com/dudeonthehorse/Email" target="_blank">
@@ -273,7 +283,7 @@
 								<p>Используйте
 									<a href="http://inliner.cm/" target="_blank">
 										<span>инлайнер</span>
-									</a> перед использованием верстки на продакшене или непосредственно перед отправкой письма через истему рассылки</p>
+									</a> перед использованием верстки на продакшене или непосредственно перед отправкой письма через систему рассылки</p>
 								<p class="quote">&laquo;Writing inline CSS can be a pain, so we built a tool that'll do the hard work for you. Just paste your HTML below, and we'll move all your styles inline.&raquo;</p>
 								<div align="center">
 									<div class="button button-transparent" style="max-width:150px;">
@@ -602,7 +612,7 @@
 	<!--[if (gte mso 9)|(IE)]>
     <table align="center" width="600" cellpadding="0" cellspacing="0" style="border-collapse:collapse;"><tr><td>
     <![endif]-->
-	<table class="newsletter" align="center" width="100%" cellpadding="30" cellspacing="0">
+	<table class="newsletter" align="center" width="100%" cellpadding="0" cellspacing="0">
 		<tr>
 			<td class="one-column footer">
 				<div class="column">
@@ -623,11 +633,6 @@
 								<div align="center">
 									<table align="center" cellpadding="10" cellspacing="0" style="margin:0 auto;">
 										<tr>
-											<td>
-												<a href="mailto:dudeonthehorse@gmail.com">
-													<img width="24" height="24" src="icons/mail.png">
-												</a>
-											</td>
 											<td>
 												<a href="https://plus.google.com/u/0/114643441727114040398" target="_blank">
 													<img width="24" height="24" src="icons/google.png">
