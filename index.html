@@ -1,272 +1,52 @@
-<!doctype html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-	<meta charset="utf-8">
-	<style>
-		/* Main Styles */
-
-		a {
-			color: #0077cc !important;
-			text-decoration: underline;
-		}
-
-		a img {
-			border: 0;
-		}
-
-		a span {
-			color: #0077cc;
-		}
-
-		body {
-			margin: 0;
-		}
-
-		div,
-		p {
-			-webkit-font-smoothing: antialiased;
-		}
-
-		table {
-			border-collapse: collapse;
-		}
-
-		p,
-		.paragraph {
-			font-family: 'helvetica', arial;
-			font-size: 14px;
-			color: #333333;
-			line-height: 1.4em;
-			text-align: left;
-		}
-
-		p {
-			margin: 1em 0;
-		}
-		/* Buttons */
-
-		.button {
-			width: 100%;
-			display: inline-block;
-			vertical-align: top;
-		}
-
-		.button table {
-			border-collapse: separate !important;
-		}
-
-		.button div {
-			font-family: 'helvetica-light', arial;
-			font-size: 14px;
-			text-align: center;
-		}
-
-		.button a {
-			color: #ffffff !important;
-			text-decoration: none;
-		}
-
-		.button span {
-			color: #ffffff;
-		}
-
-		.button-transparent a {
-			color: #666666 !important;
-		}
-
-		.button-transparent span {
-			color: #666666;
-		}
-		/* Newsletter Modules */
-
-		.content {
-			background-color: #ffffff;
-			padding: 20px 0 0 0;
-		}
-
-		.cover {
-			padding: 30px 0 0 0;
-			background-color: #ffffff;
-		}
-
-		.cover img {
-			width: 100%;
-			height: auto;
-			display: block;
-		}
-
-		.credits {
-			padding: 20px 0;
-		}
-
-		.credits .paragraph {
-			color: #999999;
-			font-size: 12px;
-			text-align: center;
-		}
-
-		.footer {
-			padding: 20px 0;
-		}
-
-		.footer .h1,
-		.footer .paragraph {
-			text-align: center;
-		}
-
-		.h1 {
-			font-family: 'helvetica-light', arial;
-			font-size: 24px;
-			color: #333333;
-			line-height: 1.2em;
-			text-align: left;
-		}
-
-		.header {
-			padding: 10px 0;
-		}
-
-		.header .paragraph {
-			font-size: 12px;
-		}
-
-		.quote {
-			font-style: italic;
-			color: #999999;
-		}
-		/* Multicolumns */
-
-		.one-column,
-		.two-columns,
-		.three-columns {
-			text-align: center;
-			font-size: 0;
-		}
-
-		.column {
-			width: 100%;
-			display: inline-block;
-			vertical-align: top;
-			font-size: 14px;
-			text-align: left;
-		}
-
-		.one-column .column {
-			max-width: 560px;
-		}
-
-		.two-columns .column {
-			max-width: 280px;
-		}
-
-		.three-columns .column {
-			max-width: 186px;
-		}
-		/* Body of the Newsletter */
-
-		.newsletter {
-			margin: 0 auto;
-			max-width: 600px;
-		}
-
-		.wrapper {
-			width: 100%;
-			background-color: #f4f4f4;
-			table-layout: fixed;
-			-webkit-text-size-adjust: 100%;
-			-ms-text-size-adjust: 100%;
-		}
-		/* Media Queries */
-
-		@media only screen and (max-width: 400px) {
-			.column {
-				max-width: 100% !important;
-			}
-		}
-
-		@media screen and (min-width: 401px) and (max-width: 600px) {
-			.two-columns .column {
-				max-width: 50% !important;
-			}
-			.three-columns .column {
-				max-width: 33.33% !important;
-			}
-		}
-
-		@media screen and (min-width: 600px) {
-			.newsletter {
-				width: 600px !important;
-			}
-		}
-	</style>
-	<!--[if (gte mso 9)|(IE)]>
-	    <style>
-			.button table {
-				width:150px !important;
-			}
-			.cover img {
-				width:600px !important;
-				height:auto !important;
-			}
-	        .one-column, .two-columns, .three-columns {
-	            padding-left:20px !important;
-	            padding-right:20px !important;
-	        }
-			.retina-image {
-				width:260px !important;
-				height:auto !important;
-			}
-	    </style>
-	<![endif]-->
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-	<div align="center" class="wrapper">
+	<div class="wrapper">
 		<!--[if (gte mso 9)|(IE)]>
-    	<table align="center" width="600" cellpadding="0" cellspacing="0" style="border-collapse:collapse;"><tr><td>
-    	<![endif]-->
-		<table class="newsletter" align="center" width="100%" cellpadding="0" cellspacing="0">
+		<table width="600" align="center">
+		<tr>
+		<td>
+		<![endif]-->
+		<table class="newsletter" align="center" width="100%">
 			<tr>
-				<td dir="rtl" class="two-columns header">
-					<!--[if (gte mso 9)|(IE)]>
-            		<table width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;"><tr><td valign="bottom" width="35%">
-            		<![endif]-->
-					<div class="column" style="max-width:130px; vertical-align:bottom;">
-						<table class="inner" width="100%" cellpadding="10" cellspacing="0">
+				<td class="one-column header">
+					<div class="column">
+						<table class="outer">
 							<tr>
-								<td>
-									<div dir="ltr" class="paragraph" style="text-align:center;">
-										<a href="https://github.com/dudeonthehorse/Email" target="_blank">
-											<span>Fork me on GitHub</span>
-										</a>
-									</div>
+								<td class="inner">
+									<div class="paragraph">Preheader text</div>
+								</td>
+							</tr>
+							<tr>
+								<td class="logo">
+									<a href="#" target="_blank"><img src="https://placeholdit.imgix.net/~text?txtsize=33&txt=Logo&w=280&h=120" width="140" height="60"></a>
 								</td>
 							</tr>
 						</table>
 					</div>
-					<!--[if (gte mso 9)|(IE)]></td><td valign="top" width="65%"><![endif]-->
-					<div class="column" style="max-width:430px;">
-						<table class="inner" width="100%" cellpadding="10" cellspacing="0">
-							<tr>
-								<td>
-									<div dir="ltr">
-										<a href="https://github.com/dudeonthehorse/Email" target="_blank">
-											<img src="https://placeholdit.imgix.net/~text?txtsize=12&txt=Logo&w=150&h=40" width="150" height="40">
-										</a>
-									</div>
-								</td>
-							</tr>
-						</table>
-					</div>
-					<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
 				</td>
 			</tr>
 		</table>
-		<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
 		<!--[if (gte mso 9)|(IE)]>
-    	<table align="center" width="600" cellpadding="0" cellspacing="0" style="border-collapse:collapse;"><tr><td>
-    	<![endif]-->
-		<table class="newsletter" align="center" width="100%" cellpadding="0" cellspacing="0" style="box-shadow:#dddddd 0 0 5px;">
+		</td>
+		</tr>
+		</table>
+		<![endif]-->
+
+		<!--[if (gte mso 9)|(IE)]>
+		<table width="600" align="center">
+		<tr>
+		<td>
+		<![endif]-->
+		<table class="newsletter middle" align="center" width="100%">
 			<tr>
 				<td class="cover">
 					<a href="https://github.com/dudeonthehorse/Email" target="_blank">
@@ -277,14 +57,11 @@
 			<tr>
 				<td class="one-column content">
 					<div class="column">
-						<table class="inner" width="100%" cellpadding="10" cellspacing="0">
+						<table class="outer">
 							<tr>
-								<td>
+								<td class="inner">
 									<div class="h1">CSS Inliner</div>
-									<p>Используйте
-										<a href="http://inliner.cm/" target="_blank">
-											<span>инлайнер</span>
-										</a> перед использованием верстки на продакшене или непосредственно перед отправкой письма через систему рассылки</p>
+									<p>Используйте <a href="http://inliner.cm/" target="_blank"><span>инлайнер</span></a> перед использованием верстки на продакшене или непосредственно перед отправкой письма через систему рассылки</p>
 									<p class="quote">&laquo;Writing inline CSS can be a pain, so we built a tool that'll do the hard work for you. Just paste your HTML below, and we'll move all your styles inline.&raquo;</p>
 									<div align="center">
 										<div class="button button-transparent" style="max-width:150px;">
@@ -311,7 +88,7 @@
 									<p>&ndash;&nbsp; Rambler.ru (web)</p>
 									<p>&ndash;&nbsp; Yandex (web, iOS, android)</p>
 									<p>&ndash;&nbsp; My.com (iOS, android)</p>
-									<p>&ndash;&nbsp; Sparrow (OSX, iOS)</p>
+									<p>&ndash;&nbsp; Spar(OSX, iOS)</p>
 									<p>&ndash;&nbsp; Airmail (OSX)</p>
 									<p>&ndash;&nbsp; Apple Mail (OSX, iOS)</p>
 									<p>&ndash;&nbsp; Mailbox (OSX, iOS, android)</p>
@@ -325,61 +102,67 @@
 				</td>
 			</tr>
 			<tr>
-				<td class="two-columns" style="padding:0; background-color:#ffffff;">
+				<td class="two-columns">
 					<!--[if (gte mso 9)|(IE)]>
-            		<table width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;"><tr><td valign="top" width="50%">
-            		<![endif]-->
+					<table width="100%">
+					<tr>
+					<td width="50%" valign="top">
+					<![endif]-->
 					<div class="column">
-						<table class="inner" width="100%" cellpadding="10" cellspacing="0">
+						<table class="outer">
 							<tr>
-								<td align="left">
-									<a href="#" target="_blank">
-										<img class="retina-image" style="width:100%; height:auto; display:block;" src="images/elem1.png">
-									</a>
+								<td class="inner">
+									<table class="contents">
+										<tr>
+											<td class="paragraph">
+												2 columns
+											</td>
+										</tr>
+									</table>
 								</td>
 							</tr>
 						</table>
 					</div>
-					<!--[if (gte mso 9)|(IE)]></td><td valign="top" width="50%"><![endif]-->
+					<!--[if (gte mso 9)|(IE)]>
+					</td><td width="50%" valign="top">
+					<![endif]-->
 					<div class="column">
-						<table class="inner" width="100%" cellpadding="10" cellspacing="0">
+						<table class="outer">
 							<tr>
-								<td>
-									<div class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-										<br>
-										<br>
-									</div>
-									<div align="left">
-										<div class="button" style="max-width:150px;">
-											<table width="100%" cellpadding="10" cellspacing="0">
-												<tr>
-													<td bgcolor="#666666" style="padding:10px 20px; border-radius:50px;">
-														<div><b><a href="#" target="_blank"><span>Button&nbsp;Example</span></a></b></div>
-													</td>
-												</tr>
-											</table>
-										</div>
-									</div>
+								<td class="inner">
+									<table class="contents">
+										<tr>
+											<td class="paragraph">
+												2 columns
+											</td>
+										</tr>
+									</table>
 								</td>
 							</tr>
 						</table>
 					</div>
-					<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+					<!--[if (gte mso 9)|(IE)]>
+					</td>
+					</tr>
+					</table>
+					<![endif]-->
 				</td>
 			</tr>
 			<tr>
-				<td dir="rtl" class="two-columns" style="padding:0; background-color:#ffffff;">
+				<td class="three-columns">
 					<!--[if (gte mso 9)|(IE)]>
-            		<table width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;"><tr><td width="50%">
-            		<![endif]-->
-					<div class="column" style="max-width:186px;">
-						<table class="inner" width="100%" cellpadding="9" cellspacing="0">
+					<table width="100%">
+					<tr>
+					<td width="33%" valign="top">
+					<![endif]-->
+					<div class="column">
+						<table class="outer">
 							<tr>
-								<td>
-									<table width="100%" cellpadding="10" cellspacing="0">
+								<td class="inner">
+									<table class="contents">
 										<tr>
-											<td bgcolor="#eeeeee">
-												<div class="paragraph">Sidebar</div>
+											<td class="paragraph">
+												3 columns
 											</td>
 										</tr>
 									</table>
@@ -387,15 +170,17 @@
 							</tr>
 						</table>
 					</div>
-					<!--[if (gte mso 9)|(IE)]></td><td width="50%"><![endif]-->
-					<div class="column" style="max-width:372px">
-						<table class="inner" width="100%" cellpadding="10" cellspacing="0">
+					<!--[if (gte mso 9)|(IE)]>
+					</td><td width="33%" valign="top">
+					<![endif]-->
+					<div class="column">
+						<table class="outer">
 							<tr>
-								<td>
-									<table width="100%" cellpadding="10" cellspacing="0">
+								<td class="inner">
+									<table class="contents">
 										<tr>
-											<td bgcolor="#eeeeee">
-												<div class="paragraph">Long Column</div>
+											<td class="paragraph">
+												3 columns
 											</td>
 										</tr>
 									</table>
@@ -403,22 +188,46 @@
 							</tr>
 						</table>
 					</div>
-					<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+					<!--[if (gte mso 9)|(IE)]>
+					</td><td width="33%" valign="top">
+					<![endif]-->
+					<div class="column">
+						<table class="outer">
+							<tr>
+								<td class="inner">
+									<table class="contents">
+										<tr>
+											<td class="paragraph">
+												3 columns
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</div>
+					<!--[if (gte mso 9)|(IE)]>
+					</td>
+					</tr>
+					</table>
+					<![endif]-->
 				</td>
 			</tr>
 			<tr>
-				<td class="two-columns" style="padding:0; background-color:#ffffff;">
+				<td class="four-columns" style="padding-bottom:20px;">
 					<!--[if (gte mso 9)|(IE)]>
-            		<table width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;"><tr><td width="50%">
-            		<![endif]-->
-					<div class="column" style="max-width:186px">
-						<table class="inner" width="100%" cellpadding="10" cellspacing="0">
+					<table width="100%">
+					<tr>
+					<td width="25%" valign="top">
+					<![endif]-->
+					<div class="column">
+						<table class="outer">
 							<tr>
-								<td>
-									<table width="100%" cellpadding="10" cellspacing="0">
+								<td class="inner">
+									<table class="contents">
 										<tr>
-											<td bgcolor="#eeeeee">
-												<div class="paragraph">Sidebar</div>
+											<td class="paragraph">
+												4 columns
 											</td>
 										</tr>
 									</table>
@@ -426,38 +235,17 @@
 							</tr>
 						</table>
 					</div>
-					<!--[if (gte mso 9)|(IE)]></td><td width="50%"><![endif]-->
-					<div class="column" style="max-width:372px;">
-						<table class="inner" width="100%" cellpadding="9" cellspacing="0">
-							<tr>
-								<td>
-									<table width="100%" cellpadding="10" cellspacing="0">
-										<tr>
-											<td bgcolor="#eeeeee">
-												<div class="paragraph">Long Column</div>
-											</td>
-										</tr>
-									</table>
-								</td>
-							</tr>
-						</table>
-					</div>
-					<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
-				</td>
-			</tr>
-			<tr>
-				<td class="two-columns" style="padding:0; background-color:#ffffff;">
 					<!--[if (gte mso 9)|(IE)]>
-            		<table width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;"><tr><td width="50%">
-            		<![endif]-->
+					</td><td width="25%" valign="top">
+					<![endif]-->
 					<div class="column">
-						<table class="inner" width="100%" cellpadding="10" cellspacing="0">
+						<table class="outer">
 							<tr>
-								<td>
-									<table width="100%" cellpadding="10" cellspacing="0">
+								<td class="inner">
+									<table class="contents">
 										<tr>
-											<td bgcolor="#eeeeee">
-												<div class="paragraph">2 columns</div>
+											<td class="paragraph">
+												4 columns
 											</td>
 										</tr>
 									</table>
@@ -465,38 +253,17 @@
 							</tr>
 						</table>
 					</div>
-					<!--[if (gte mso 9)|(IE)]></td><td width="50%"><![endif]-->
-					<div class="column">
-						<table class="inner" width="100%" cellpadding="9" cellspacing="0">
-							<tr>
-								<td>
-									<table width="100%" cellpadding="10" cellspacing="0">
-										<tr>
-											<td bgcolor="#eeeeee">
-												<div class="paragraph">2 columns</div>
-											</td>
-										</tr>
-									</table>
-								</td>
-							</tr>
-						</table>
-					</div>
-					<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
-				</td>
-			</tr>
-			<tr>
-				<td class="three-columns" style="padding:0; background-color:#ffffff;">
 					<!--[if (gte mso 9)|(IE)]>
-            		<table width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;"><tr><td width="33%">
-            		<![endif]-->
+					</td><td width="25%" valign="top">
+					<![endif]-->
 					<div class="column">
-						<table class="inner" width="100%" cellpadding="10" cellspacing="0">
+						<table class="outer">
 							<tr>
-								<td>
-									<table width="100%" cellpadding="10" cellspacing="0">
+								<td class="inner">
+									<table class="contents">
 										<tr>
-											<td bgcolor="#eeeeee">
-												<div class="paragraph">3 columns</div>
+											<td class="paragraph">
+												4 columns
 											</td>
 										</tr>
 									</table>
@@ -504,69 +271,17 @@
 							</tr>
 						</table>
 					</div>
-					<!--[if (gte mso 9)|(IE)]></td><td width="34%"><![endif]-->
-					<div class="column">
-						<table class="inner" width="100%" cellpadding="10" cellspacing="0">
-							<tr>
-								<td>
-									<table width="100%" cellpadding="10" cellspacing="0">
-										<tr>
-											<td bgcolor="#eeeeee">
-												<div class="paragraph">3 columns</div>
-											</td>
-										</tr>
-									</table>
-								</td>
-							</tr>
-						</table>
-					</div>
-					<!--[if (gte mso 9)|(IE)]></td><td width="33%""><![endif]-->
-					<div class="column">
-						<table class="inner" width="100%" cellpadding="10" cellspacing="0">
-							<tr>
-								<td>
-									<table width="100%" cellpadding="10" cellspacing="0">
-										<tr>
-											<td bgcolor="#eeeeee">
-												<div class="paragraph">3 columns</div>
-											</td>
-										</tr>
-									</table>
-								</td>
-							</tr>
-						</table>
-					</div>
-					<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
-				</td>
-			</tr>
-			<tr>
-				<td class="two-columns" style="padding:0 0 20px 0; background-color:#ffffff;">
 					<!--[if (gte mso 9)|(IE)]>
-            		<table width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;"><tr><td width="50%">
-            		<![endif]-->
+					</td><td width="25%" valign="top">
+					<![endif]-->
 					<div class="column">
-						<table class="inner" width="100%" cellpadding="0" cellspacing="0">
+						<table class="outer">
 							<tr>
-								<td style="padding:0;">
-									<table width="100%" cellpadding="10" cellspacing="0">
+								<td class="inner">
+									<table class="contents">
 										<tr>
-											<td>
-												<table width="100%" cellpadding="10" cellspacing="0">
-													<tr>
-														<td bgcolor="#eeeeee">
-															<div class="paragraph">2+2 columns</div>
-														</td>
-													</tr>
-												</table>
-											</td>
-											<td>
-												<table width="100%" cellpadding="10" cellspacing="0">
-													<tr>
-														<td bgcolor="#eeeeee">
-															<div class="paragraph">2+2 columns</div>
-														</td>
-													</tr>
-												</table>
+											<td class="paragraph">
+												4 columns
 											</td>
 										</tr>
 									</table>
@@ -574,52 +289,31 @@
 							</tr>
 						</table>
 					</div>
-					<!--[if (gte mso 9)|(IE)]></td><td width="50%"><![endif]-->
-					<div class="column">
-						<table class="inner" width="100%" cellpadding="0" cellspacing="0">
-							<tr>
-								<td style="padding:0;">
-									<table width="100%" cellpadding="10" cellspacing="0">
-										<tr>
-											<td>
-												<table width="100%" cellpadding="10" cellspacing="0">
-													<tr>
-														<td bgcolor="#eeeeee">
-															<div class="paragraph">2+2 columns</div>
-														</td>
-													</tr>
-												</table>
-											</td>
-											<td>
-												<table width="100%" cellpadding="10" cellspacing="0">
-													<tr>
-														<td bgcolor="#eeeeee">
-															<div class="paragraph">2+2 columns</div>
-														</td>
-													</tr>
-												</table>
-											</td>
-										</tr>
-									</table>
-								</td>
-							</tr>
-						</table>
-					</div>
-					<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+					<!--[if (gte mso 9)|(IE)]>
+					</td>
+					</tr>
+					</table>
+					<![endif]-->
 				</td>
 			</tr>
 		</table>
-		<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
 		<!--[if (gte mso 9)|(IE)]>
-    	<table align="center" width="600" cellpadding="0" cellspacing="0" style="border-collapse:collapse;"><tr><td>
-    	<![endif]-->
-		<table class="newsletter" align="center" width="100%" cellpadding="0" cellspacing="0">
+		</td>
+		</tr>
+		</table>
+		<![endif]-->
+		<!--[if (gte mso 9)|(IE)]>
+		<table width="600" align="center">
+		<tr>
+		<td>
+		<![endif]-->
+		<table class="newsletter" align="center" width="100%">
 			<tr>
 				<td class="one-column footer">
 					<div class="column">
-						<table class="inner" width="100%" cellpadding="10" cellspacing="0">
+						<table class="outer">
 							<tr>
-								<td>
+								<td class="inner">
 									<div class="h1">
 										Contact Me
 										<br>
@@ -671,16 +365,14 @@
 			<tr>
 				<td class="one-column credits">
 					<div class="column">
-						<table class="inner" width="100%" cellpadding="10" cellspacing="0">
+						<table class="outer">
 							<tr>
-								<td>
+								<td class="inner">
 									<div class="paragraph">
 										Social icons by
-										<a href="http://www.socicon.com/" target="_blank">
-											<span>Socicon</span>
-										</a>
+										<a href="http://www.socicon.com/" target="_blank"><span>Socicon</span></a>
 										<br>
-										<br> You are receiving this email because I want. Ha-ha-ha-ha! To unsubscribe
+										<br> You are received this message because I want. Ha-ha-ha-ha! To unsubscribe
 										<a href="https://github.com/dudeonthehorse/Email" target="_blank">
 											<span>click here</span>
 										</a>
@@ -692,6 +384,12 @@
 				</td>
 			</tr>
 		</table>
-		<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+		<!--[if (gte mso 9)|(IE)]>
+		</td>
+		</tr>
+		</table>
+		<![endif]-->
 	</div>
 </body>
+
+</html>
