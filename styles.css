@@ -1,0 +1,187 @@
+/* Body of the Newsletter */
+
+body {
+    background-color: #f4f4f4;
+    margin: 0;
+}
+.newsletter {
+    margin: 0 auto;
+    max-width: 600px;
+    width:100%;
+}
+.wrapper {
+    width: 100%;
+    text-align: center;
+    background-color: #f4f4f4;
+    table-layout: fixed;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+/* Main Styles */
+
+a {
+    color: #0077cc !important;
+    text-decoration: underline;
+}
+a img {
+    border: 0;
+}
+a span {
+    color: #0077cc;
+}
+div, p {
+    -webkit-font-smoothing: antialiased;
+}
+table {
+    border-collapse: collapse;
+}
+p, .paragraph {
+    font-family: helvetica, arial;
+    font-size: 14px;
+    color: #333333;
+    line-height: 1.4em;
+    text-align: left;
+}
+p {
+    margin: 1em 0;
+}
+.quote {
+    font-style: italic;
+    color: #999999;
+}
+
+/* Buttons */
+
+.button {
+    width:auto !important;
+    margin:auto;
+}
+
+.button .button-outer {
+    padding:0;
+}
+
+.button .button-inner {
+    background-color: #333333;
+    padding:10px 30px;
+    border-radius: 50px;
+}
+
+.button .button-link {
+    color:#ffffff !important;
+    text-decoration: none;
+}
+
+.button .button-text {
+    font-family: helvetica, arial;
+    font-weight: bold;
+    font-size:15px;
+    color:#ffffff;
+    text-decoration: none;
+}
+
+/* Newsletter Modules */
+
+.content {
+    padding: 20px 0 0 0;
+}
+.cover {
+    padding: 30px 0 0 0;
+}
+.cover img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 4px 4px 0 0;
+}
+.credits {
+    padding: 20px 0;
+}
+.credits .paragraph {
+    color: #999999;
+    font-size: 12px;
+    text-align: center;
+}
+.footer {
+    padding: 20px 0;
+}
+.footer .h1,
+.footer .paragraph {
+    text-align: center;
+}
+.h1 {
+    font-family: 'helvetica', arial;
+    font-size: 24px;
+    color: #333333;
+    line-height: 1.2em;
+    text-align: left;
+}
+.header {
+    padding: 0;
+}
+.header .logo {
+    padding: 20px 0 20px 0;
+    text-align: center;
+}
+.header .paragraph {
+    font-size: 12px;
+    text-align: center;
+}
+.middle {
+    background-color: #ffffff;
+    border-radius: 4px;
+}
+
+/* Multicolumns */
+
+.one-column, .two-columns, .three-columns, .four-columns {
+    text-align: center;
+    font-size: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.column {
+    width: 100%;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 14px;
+    text-align: left;
+}
+.one-column .column {
+    max-width: 560px;
+}
+.two-columns .column {
+    max-width: 280px;
+}
+.three-columns .column {
+    max-width: 187px;
+}
+.four-columns .column {
+    max-width: 280px;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 400px) {
+    .two-columns .column {
+        max-width: 100% !important;
+    }
+    .three-columns .column {
+        max-width: 75% !important;
+    }
+    .four-columns .column {
+        max-width: 100% !important;
+    }
+}
+@media screen and (min-width: 401px) and (max-width: 600px) {
+    .two-columns .column {
+        max-width: 50% !important;
+    }
+    .three-columns .column {
+        max-width: 33.33% !important;
+    }
+    .four-columns .column {
+        max-width: 50% !important;
+    }
+}
