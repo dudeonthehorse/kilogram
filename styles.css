@@ -1,8 +1,13 @@
 /* Body of the Newsletter */
 
+body {
+    background-color: #f4f4f4;
+    margin: 0;
+}
 .newsletter {
     margin: 0 auto;
     max-width: 600px;
+    width:100%;
 }
 .wrapper {
     width: 100%;
@@ -25,9 +30,6 @@ a img {
 a span {
     color: #0077cc;
 }
-body {
-    margin: 0;
-}
 div, p {
     -webkit-font-smoothing: antialiased;
 }
@@ -44,7 +46,6 @@ p, .paragraph {
 p {
     margin: 1em 0;
 }
-
 .quote {
     font-style: italic;
     color: #999999;
@@ -91,6 +92,7 @@ p {
     width: 100%;
     height: auto;
     display: block;
+    border-radius: 4px 4px 0 0;
 }
 .credits {
     padding: 20px 0;
@@ -103,7 +105,8 @@ p {
 .footer {
     padding: 20px 0;
 }
-.footer .h1, .footer .paragraph {
+.footer .h1,
+.footer .paragraph {
     text-align: center;
 }
 .h1 {
@@ -117,11 +120,11 @@ p {
     padding: 0;
 }
 .header .logo {
-    padding:0 0 20px 0;
+    padding: 20px 0 20px 0;
     text-align: center;
 }
 .header .paragraph {
-    font-size:12px;
+    font-size: 12px;
     text-align: center;
 }
 .middle {
@@ -134,6 +137,8 @@ p {
 .one-column, .two-columns, .three-columns, .four-columns {
     text-align: center;
     font-size: 0;
+    padding-left: 0;
+    padding-right: 0;
 }
 .column {
     width: 100%;
@@ -143,18 +148,10 @@ p {
     text-align: left;
 }
 .column .outer {
-    width:100%;
+    width: 100%;
 }
-.column .contents {
-    background-color: #f4f4f4;
-    border-radius: 4px;
-    width:100%;
-}
-.column .contents td {
-    padding:10px;
-}
-.column .inner {
-    padding:10px;
+.column table {
+    width: 100%;
 }
 .one-column .column {
     max-width: 560px;
@@ -166,7 +163,7 @@ p {
     max-width: 187px;
 }
 .four-columns .column {
-    max-width: 140px;
+    max-width: 280px;
 }
 
 /* Media Queries */
@@ -179,20 +176,24 @@ p {
         max-width: 75% !important;
     }
     .four-columns .column {
-        max-width: 50% !important;
+        max-width: 100% !important;
     }
 }
 @media screen and (min-width: 401px) and (max-width: 600px) {
     .two-columns .column {
         max-width: 50% !important;
     }
-    .three-columns .column, .four-columns .column  {
+    .three-columns .column {
         max-width: 33.33% !important;
     }
-
+    .four-columns .column {
+        max-width: 50% !important;
+    }
 }
-@media screen and (min-width: 600px) {
-    .newsletter {
-        width: 600px !important;
+
+@media screen and (min-width: 300px) and (max-width: 600px) {
+    .one-column, .two-columns, .three-columns, .four-columns {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
     }
 }
