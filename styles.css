@@ -10,7 +10,7 @@ body {
     width:100%;
 }
 .wrapper {
-    width: 100%;
+    margin:0 10px;
     text-align: center;
     background-color: #f4f4f4;
     table-layout: fixed;
@@ -30,7 +30,7 @@ a img {
 a span {
     color: #0077cc;
 }
-div, p {
+div, p, td {
     -webkit-font-smoothing: antialiased;
 }
 table {
@@ -84,13 +84,14 @@ p {
 /* Newsletter Modules */
 
 .content {
-    padding: 20px 0 0 0;
+    padding: 0;
 }
 .cover {
-    padding: 30px 0 0 0;
+    padding: 0 0 0 0;
 }
 .cover img {
     width: 100%;
+    max-width: 600px;
     height: auto;
     display: block;
     border-radius: 4px 4px 0 0;
@@ -138,6 +139,8 @@ p {
 .one-column, .two-columns, .three-columns, .four-columns {
     text-align: center;
     font-size: 0;
+}
+.two-columns, .three-columns, .four-columns {
     padding-left: 10px;
     padding-right: 10px;
 }
@@ -149,16 +152,16 @@ p {
     text-align: left;
 }
 .one-column .column {
-    max-width: 560px;
+    max-width: 600px;
 }
 .two-columns .column {
-    max-width: 280px;
+    max-width: 290px;
 }
 .three-columns .column {
-    max-width: 187px;
+    max-width: 193px;
 }
 .four-columns .column {
-    max-width: 280px;
+    max-width: 290px;
 }
 
 /* Media Queries */
@@ -168,13 +171,13 @@ p {
         max-width: 100% !important;
     }
     .three-columns .column {
-        max-width: 75% !important;
+        max-width: 50% !important;
     }
     .four-columns .column {
         max-width: 100% !important;
     }
 }
-@media screen and (min-width: 401px) and (max-width: 600px) {
+@media screen and (min-width: 401px) and (max-width: 620px) {
     .two-columns .column {
         max-width: 50% !important;
     }
@@ -182,6 +185,6 @@ p {
         max-width: 33.33% !important;
     }
     .four-columns .column {
-        max-width: 50% !important;
+        max-width: 100% !important;
     }
 }
