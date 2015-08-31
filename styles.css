@@ -91,6 +91,7 @@ p {
 }
 .cover img {
     width: 100%;
+    height: auto;
     max-width: 600px;
     height: auto;
     display: block;
