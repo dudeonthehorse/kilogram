@@ -22,3 +22,4 @@
 - Airmail (OSX)
 - Apple Mail (OSX, iOS)
 - Mailbox (OSX, iOS, android)
+- Spark (iOS)
