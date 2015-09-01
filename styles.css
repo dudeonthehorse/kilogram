@@ -55,30 +55,30 @@ p {
 
 .button {
     width:auto !important;
-    margin:auto;
+    margin: auto;
 }
 
-.button .button-outer {
+.button td {
     padding:0;
 }
 
-.button .button-inner {
-    background-color: #333333;
-    padding:10px 30px;
-    border-radius: 50px;
-}
-
-.button .button-link {
+.button-link {
+    font-family: helvetica;
+    font-size: 14px;
     color:#ffffff !important;
+    font-weight: bold;
     text-decoration: none;
+    background-color: #333333;
+    border:#333333 10px solid;
+    border-radius: 25px;
+    display: inline-block;
 }
 
-.button .button-text {
-    font-family: helvetica, arial;
-    font-weight: bold;
-    font-size:15px;
+.button-link span {
+    display: inline-block;
+    border-left:#333333 20px solid;
+    border-right:#333333 20px solid;
     color:#ffffff;
-    text-decoration: none;
 }
 
 /* Newsletter Modules */
@@ -172,7 +172,7 @@ p {
         max-width: 100% !important;
     }
     .three-columns .column {
-        max-width: 50% !important;
+        max-width: 49.9% !important;
     }
     .four-columns .column {
         max-width: 100% !important;
