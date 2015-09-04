@@ -40,11 +40,11 @@ p, .paragraph {
     font-family: helvetica, arial;
     font-size: 14px;
     color: #333333;
-    line-height: 20px;
     text-align: left;
+    line-height: 20px;
 }
 p {
-    margin: 1em 0;
+    Margin: 1em 0;
 }
 .quote {
     font-style: italic;
@@ -116,8 +116,8 @@ p {
     font-family: 'helvetica', arial;
     font-size: 24px;
     color: #333333;
-    line-height: 28px;
     text-align: left;
+    line-height: 30px;
 }
 .header {
     padding: 0;
