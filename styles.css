@@ -1,15 +1,24 @@
-/* Body of the Newsletter */
+/* Newsletter */
 
 body {
     background-color: #f4f4f4;
     margin: 0;
 }
-.newsletter {
+
+.outer {
     margin: 0 auto;
     max-width: 600px;
     width:100%;
 }
-.wrapper {
+
+.middle .outer {
+    background-color: #ffffff;
+    border-radius:4px;
+}
+
+.header,
+.middle,
+.footer {
     margin:0 10px;
     text-align: center;
     background-color: #f4f4f4;
@@ -18,37 +27,66 @@ body {
     -ms-text-size-adjust: 100%;
 }
 
-/* Main Styles */
+/* Basic Styles */
 
 a {
     color: #0077cc !important;
     text-decoration: underline;
 }
-a img {
-    border: 0;
-}
+
 a span {
     color: #0077cc;
 }
+
+a img {
+    border: 0;
+}
+
 div, p, td {
     -webkit-font-smoothing: antialiased;
 }
+
 table {
     border-collapse: collapse;
 }
-p, .paragraph {
+
+.h1 {
+    font-family: 'helvetica', arial;
+    font-size: 24px;
+    color: #333333;
+    text-align: left;
+    line-height: 30px;
+}
+
+p,
+.paragraph {
     font-family: helvetica, arial;
     font-size: 14px;
     color: #333333;
     text-align: left;
     line-height: 20px;
 }
+
 p {
     Margin: 1em 0;
 }
+
 .quote {
     font-style: italic;
     color: #999999;
+}
+
+.cover {
+    padding: 0 0 0 0;
+}
+
+.cover img {
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+    height: auto;
+    display: block;
+    border-radius: 4px 4px 0 0;
 }
 
 /* Buttons */
@@ -81,58 +119,38 @@ p {
     color:#ffffff;
 }
 
-/* Newsletter Modules */
+/* Custom CSS */
+
+.contacts .h1 {
+    text-align: center;
+}
+
+.contacts .paragraph {
+    text-align: center;
+}
 
 .content {
-    padding: 0;
+    padding:0 0 0 0;
 }
-.cover {
-    padding: 0 0 0 0;
-}
-.cover img {
-    width: 100%;
-    height: auto;
-    max-width: 600px;
-    height: auto;
-    display: block;
-    border-radius: 4px 4px 0 0;
-}
-.credits {
-    padding: 20px 0;
-}
+
 .credits .paragraph {
     color: #999999;
     font-size: 12px;
     text-align: center;
 }
-.footer {
-    padding: 20px 0;
-}
-.footer .h1,
-.footer .paragraph {
+
+.header .h1 {
     text-align: center;
 }
-.h1 {
-    font-family: 'helvetica', arial;
-    font-size: 24px;
-    color: #333333;
-    text-align: left;
-    line-height: 30px;
-}
-.header {
-    padding: 0;
-}
-.header .logo {
-    padding: 20px 0 20px 0;
-    text-align: center;
-}
+
 .header .paragraph {
-    font-size: 12px;
     text-align: center;
+    font-size: 11px;
+    color:#666666;
 }
-.middle {
-    background-color: #ffffff;
-    border-radius: 4px;
+
+.logo td {
+    text-align: center;
 }
 
 /* Multicolumns */
