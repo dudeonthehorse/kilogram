@@ -43,7 +43,7 @@ a img {
 }
 
 div, p, td {
-    -webkit-font-smoothing: antialiased;
+    -webkit-font-smoothing: subpixel-antialiased;
 }
 
 table {
