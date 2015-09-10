@@ -5,7 +5,10 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/columns.css">
+	<link rel="stylesheet" href="css/custom.css">
+	<link rel="stylesheet" href="css/media.css">
 </head>
 
 <body>
@@ -89,6 +92,12 @@
 						<table width="100%" cellpadding="20">
 							<tr>
 								<td style="padding-bottom:10px;">
+									<h1>{{ title }}</h1>
+								    <ul>
+								        {% for person in people %}
+								        <li>{{ person.name }} age {{ person.age }}</li>
+								        {% endfor %}
+								    </ul>
 									<div class="h1">CSS Inliner</div>
 									<p>Используйте
 										<a href="http://inliner.cm/" target="_blank">
@@ -119,7 +128,7 @@
 									</p>
 									<br>
 									<div class="h1">
-										Multicolumns
+										Multicolumns Examples. Content by <a href="http://dribbble.com/"><span>Dribbble.com</span></a>
 									</div>
 								</td>
 							</tr>
@@ -138,13 +147,14 @@
 						<table width="100%" cellpadding="10">
 							<tr>
 								<td>
-									<table width="100%" cellpadding="10" bgcolor="#f4f4f4" style="border-radius:4px;">
-										<tr>
-											<td class="paragraph">
-												2 columns
-											</td>
-										</tr>
-									</table>
+									<img src="https://d13yacurqjgara.cloudfront.net/users/14604/screenshots/1764344/helpcreature_1x.png" style="width:100%;">
+								</td>
+							</tr>
+							<tr>
+								<td style="padding-top:0;">
+									<div class="h2"><a href="#" target="_blank"><span>HelpCreature Welcome Email</span></a></div>
+									<div class="paragraph">by Allan Grinshtein Oct 13, 2014</div>
+									<div class="paragraph quote">Learning Rails and building a tiny project called HelpCreature in the process. Here's a shot of the welcome email.</div>
 								</td>
 							</tr>
 						</table>
@@ -156,13 +166,14 @@
 						<table width="100%" cellpadding="10">
 							<tr>
 								<td>
-									<table width="100%" cellpadding="10" bgcolor="#f4f4f4" style="border-radius:4px;">
-										<tr>
-											<td class="paragraph">
-												2 columns
-											</td>
-										</tr>
-									</table>
+									<img src="https://d13yacurqjgara.cloudfront.net/users/3139/screenshots/1015141/email_id.jpg" style="width:100%;">
+								</td>
+							</tr>
+							<tr>
+								<td style="padding-top:0;">
+									<div class="h2"><a href="#" target="_blank">Emailing</span></a></div>
+									<div class="paragraph">by Mackey Saturday Apr 4, 2013</div>
+									<div class="paragraph quote">email, chat, app, all in one.</div>
 								</td>
 							</tr>
 						</table>

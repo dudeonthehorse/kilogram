@@ -58,6 +58,14 @@ table {
     line-height: 30px;
 }
 
+.h2 {
+    font-family: 'helvetica', arial;
+    font-size: 18px;
+    color: #333333;
+    text-align: left;
+    line-height: 24px;
+}
+
 p,
 .paragraph {
     font-family: helvetica, arial;
@@ -108,102 +116,11 @@ p {
     text-decoration: none;
     background-color: #333333;
     border:#333333 10px solid;
+    padding:0 10px;
     border-radius: 25px;
     display: inline-block;
 }
 
 .button-link span {
-    display: inline-block;
-    border-left:#333333 20px solid;
-    border-right:#333333 20px solid;
     color:#ffffff;
-}
-
-/* Custom CSS */
-
-.contacts .h1 {
-    text-align: center;
-}
-
-.contacts .paragraph {
-    text-align: center;
-}
-
-.content {
-    padding:0 0 0 0;
-}
-
-.credits .paragraph {
-    color: #999999;
-    font-size: 12px;
-    text-align: center;
-}
-
-.header .h1 {
-    text-align: center;
-}
-
-.header .paragraph {
-    text-align: center;
-    font-size: 11px;
-    color:#666666;
-}
-
-.logo td {
-    text-align: center;
-}
-
-/* Multicolumns */
-
-.one-column, .two-columns, .three-columns, .four-columns {
-    text-align: center;
-    font-size: 0;
-}
-.two-columns, .three-columns, .four-columns {
-    padding-left: 10px;
-    padding-right: 10px;
-}
-.column {
-    width: 100%;
-    display: inline-block;
-    vertical-align: top;
-    font-size: 14px;
-    text-align: left;
-}
-.one-column .column {
-    max-width: 600px;
-}
-.two-columns .column {
-    max-width: 290px;
-}
-.three-columns .column {
-    max-width: 193px;
-}
-.four-columns .column {
-    max-width: 290px;
-}
-
-/* Media Queries */
-
-@media only screen and (max-width: 400px) {
-    .two-columns .column {
-        max-width: 100% !important;
-    }
-    .three-columns .column {
-        max-width: 49.9% !important;
-    }
-    .four-columns .column {
-        max-width: 100% !important;
-    }
-}
-@media screen and (min-width: 401px) and (max-width: 620px) {
-    .two-columns .column {
-        max-width: 50% !important;
-    }
-    .three-columns .column {
-        max-width: 33.33% !important;
-    }
-    .four-columns .column {
-        max-width: 100% !important;
-    }
 }

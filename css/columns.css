@@ -1,0 +1,29 @@
+/* Columns CSS */
+
+.one-column, .two-columns, .three-columns, .four-columns {
+    text-align: center;
+    font-size: 0;
+}
+.two-columns, .three-columns, .four-columns {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.column {
+    width: 100%;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 14px;
+    text-align: left;
+}
+.one-column .column {
+    max-width: 600px;
+}
+.two-columns .column {
+    max-width: 290px;
+}
+.three-columns .column {
+    max-width: 193px;
+}
+.four-columns .column {
+    max-width: 290px;
+}
