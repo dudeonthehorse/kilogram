@@ -1,25 +1,27 @@
 var build = './build';
 var production = './production';
-var src = './src';
+var dev = './dev';
 
 module.exports = {
 
-	src: src,
+	src: dev,
 	build: build,
 	production: production,
 
 	inliner: {
-		src: src + '/index.html',
+		src: dev + '/index.html',
 		dest: build
 	},
 
 	concatcss: {
-		src: src + '/css/*.css',
-		dest: build
+		src: dev + '/css/*.css',
+		dest: dev,
+		allFile: 'allstyles.css',
+		delStyleCompile: dev + '/allstyles.css'
 	},
 
 	images: {
-		src: [src + '/images/**'],
+		src: [dev + '/images/**'],
 		dest: build + '/images'
 	}
 
