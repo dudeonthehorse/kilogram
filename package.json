@@ -1,0 +1,21 @@
+{
+  "name": "Email",
+  "description": "Email framework",
+  "version": "0.0.1",
+  "homepage": "https://github.com/dudeonthehorse/Email/",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:dudeonthehorse/Email.git"
+  },
+  "author": "Arthur Koch <dudeonthehorse@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "del": "2.0.2",
+    "gulp": "3.9.0",
+    "gulp-concat": "2.6.0",
+    "gulp-file-include": "0.13.7",
+    "gulp-inline-css": "2.0.0",
+    "require-dir": "0.3.0",
+    "run-sequence": "1.1.2"
+  }
+}
