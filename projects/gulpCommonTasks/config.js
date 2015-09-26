@@ -1,15 +1,13 @@
 var build = './build';
-var production = './production';
 var dev = './dev';
 
 module.exports = {
 
 	src: dev,
 	build: build,
-	production: production,
 
 	inliner: {
-		src: dev + '/index.html',
+		src: dev + '/*.html',
 		dest: build
 	},
 
