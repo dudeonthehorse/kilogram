@@ -14,6 +14,7 @@
     "gulp": "3.9.0",
     "gulp-concat": "2.6.0",
     "gulp-file-include": "0.13.7",
+    "gulp-html-minifier": "0.1.6",
     "gulp-inline-css": "2.0.0",
     "require-dir": "0.3.0",
     "run-sequence": "1.1.2"
