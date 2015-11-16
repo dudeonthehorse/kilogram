@@ -1,0 +1,128 @@
+/* Newsletter */
+
+body {
+	background-color: @bodyBg;
+	margin: 0;
+}
+
+.outer {
+	margin: 0 auto;
+	max-width: 600px;
+	width: 100%;
+}
+
+.middle .outer {
+	background-color: @whiteColor;
+	border-radius: 4px;
+}
+
+.header,
+.middle,
+.footer {
+	margin: 0 10px;
+	text-align: center;
+	background-color: @bodyBg;
+	table-layout: fixed;
+	-webkit-text-size-adjust: 100%;
+		-ms-text-size-adjust: 100%;
+}
+
+/* Basic Styles */
+
+a {
+	color: @linkColor !important;
+	text-decoration: underline;
+}
+
+a span {
+	color: @linkColor;
+}
+
+a img {
+	border: 0;
+}
+
+div,
+p,
+td {
+	-webkit-font-smoothing: subpixel-antialiased;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+.h1 {
+	font-family: @fontFamily;
+	font-size: 24px;
+	color: @textColor;
+	text-align: left;
+	line-height: 30px;
+}
+
+.h2 {
+	font-family: @fontFamily;
+	font-size: 18px;
+	color: @textColor;
+	text-align: left;
+	line-height: 24px;
+}
+
+p,
+.paragraph {
+	font-family: @fontFamily;
+	font-size: 14px;
+	color: @textColor;
+	text-align: left;
+	line-height: 20px;
+}
+
+p {
+	margin: 1em 0;
+}
+
+.quote {
+	font-style: italic;
+	color: #999;
+}
+
+.cover {
+	padding: 0 0 0 0;
+}
+
+.cover img {
+	width: 100%;
+	height: auto;
+	max-width: 600px;
+	height: auto;
+	display: block;
+	border-radius: 4px 4px 0 0;
+}
+
+/* Buttons */
+
+.button {
+	width: auto !important;
+	margin: auto;
+}
+
+.button td {
+	padding: 0;
+}
+
+.button-link {
+	font-family: @fontFamily;
+	font-size: 14px;
+	color: @whiteColor !important;
+	font-weight: bold;
+	text-decoration: none;
+	background-color: @textColor;
+	border: @textColor 10px solid;
+	padding: 0 10px;
+	border-radius: 25px;
+	display: inline-block;
+}
+
+.button-link span {
+	color: @whiteColor;
+}

@@ -11,6 +11,12 @@ module.exports = {
 		dest: build
 	},
 
+	less: {
+		file: dev + '/less/main.less',
+		src: dev + '/less/*.less',
+		dest: dev + '/css',
+	},
+
 	concatcss: {
 		src: dev + '/css/*.css',
 		dest: dev,
