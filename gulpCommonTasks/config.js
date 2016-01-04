@@ -13,10 +13,10 @@ module.exports = {
 	},
 
 	concatcss: {
-		src: dev + '/css/*.css',
+		src: 'css/*.css',
 		dest: dev,
-		allFile: 'allstyles.css',
-		delStyleCompile: dev + '/allstyles.css'
+		cwd: dev,
+		allFile: 'allstyles.css'
 	},
 
 	images: {
