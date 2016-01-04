@@ -7,7 +7,8 @@ module.exports = {
 	build: build,
 
 	inliner: {
-		src: [dev + '/*.html', '!' + dev + '/_*.html'],
+		src: ['*.html', '!_*.html'],
+		cwd: dev,
 		dest: build
 	},
 
