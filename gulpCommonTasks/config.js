@@ -7,19 +7,21 @@ module.exports = {
 	build: build,
 
 	inliner: {
-		src: [dev + '/*.html', '!' + dev + '/_*.html'],
+		src: ['*.html', '!_*.html'],
+		cwd: dev,
 		dest: build
 	},
 
 	concatcss: {
-		src: dev + '/css/*.css',
+		src: 'css/*.css',
 		dest: dev,
-		allFile: 'allstyles.css',
-		delStyleCompile: dev + '/allstyles.css'
+		cwd: dev,
+		allFile: 'allstyles.css'
 	},
 
 	images: {
-		src: [dev + '/images/**'],
+		src: 'images/**',
+		cwd: dev,
 		dest: build + '/images'
 	}
 

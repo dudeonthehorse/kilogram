@@ -7,7 +7,7 @@ var notify = require("gulp-notify");
 var plumber = require('gulp-plumber');
 
 gulp.task('inliner', function() {
-	return gulp.src(config.src)
+	return gulp.src(config.src, {cwd: config.cwd})
 		.pipe(plumber({errorHandler: notify.onError("Error: <%= error.message %>")}))
 		.pipe(fileinclude({
 			prefix: '@@',
