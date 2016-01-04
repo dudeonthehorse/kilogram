@@ -19,7 +19,8 @@ module.exports = {
 	},
 
 	images: {
-		src: [dev + '/images/**'],
+		src: 'images/**',
+		cwd: dev,
 		dest: build + '/images'
 	}
 
