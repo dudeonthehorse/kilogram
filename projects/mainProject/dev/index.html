@@ -10,12 +10,12 @@
 	<link rel="stylesheet" href="css/custom.css">
 	<link rel="stylesheet" href="css/media.css">
 	<style>
-		@@include('allstyles.css')
+		{% include "allstyles.css" %}
 	</style>
 </head>
 
 <body>
-	@@include('_header.html')
+	{% include "partials/header.html" %}
 	<div class="middle">
 		<!--[if (gte mso 9)|(IE)]>
 		<table width="600" align="center">
@@ -284,7 +284,7 @@
 		</table>
 		<![endif]-->
 	</div>
-	@@include('_footer.html')
+	{% include "partials/footer.html" %}
 </body>
 
 </html>
