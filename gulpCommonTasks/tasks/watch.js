@@ -12,6 +12,8 @@ gulp.task('watch', function () {
 gulp.task('build', function(cb) {
 	runSequence(
 		'concatcss',
+		'nunjucksCopyCss',
+		'nunjucks',
 		'inliner',
 		cb
 	);

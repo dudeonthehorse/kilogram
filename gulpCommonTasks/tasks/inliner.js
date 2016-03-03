@@ -7,16 +7,12 @@ var nunjucksRender = require('gulp-nunjucks-render');
 var plumber = require('gulp-plumber');
 
 gulp.task('inliner', function() {
-	nunjucksRender.nunjucks.configure([config.cwd], {
-		watch: false
-	});
 	return gulp.src(config.src, {
-			cwd: config.cwd
+			cwd: config.dest
 		})
 		.pipe(plumber({
 			errorHandler: notify.onError("Error: <%= error.message %>")
 		}))
-		.pipe(nunjucksRender())
 		.pipe(inlineCss({
 			removeStyleTags: false
 		}))
