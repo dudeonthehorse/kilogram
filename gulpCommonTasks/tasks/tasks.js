@@ -6,6 +6,7 @@ gulp.task('default', function(cb) {
 	runSequence(
 		'clean',
 		'concatcss',
+		['nunjucks','nunjucksCopyCss'],
 		[ 'inliner', 'images'],
 		'watch',
 		cb

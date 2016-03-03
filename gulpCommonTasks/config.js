@@ -12,6 +12,14 @@ module.exports = {
 		dest: build
 	},
 
+	nunjucks: {
+		src: ['*.html', '!_*.html'],
+		cwd: dev,
+		dest: build,
+		srcCSS: 'css/**',
+		destCSS: build + '/css'
+	},
+
 	concatcss: {
 		src: 'css/*.css',
 		dest: dev,
