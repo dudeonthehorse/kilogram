@@ -1,12 +1,12 @@
 var gulp = require('gulp');
-var config = require('../config').inliner;
+var config = require('../config').template;
 var inlineCss = require('gulp-inline-css');
 var htmlmin = require('gulp-html-minifier');
 var notify = require("gulp-notify");
 var nunjucksRender = require('gulp-nunjucks-render');
 var plumber = require('gulp-plumber');
 
-gulp.task('inliner', function() {
+gulp.task('template', function() {
 	nunjucksRender.nunjucks.configure([config.cwd], {
 		watch: false
 	});

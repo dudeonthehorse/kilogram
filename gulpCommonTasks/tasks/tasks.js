@@ -6,9 +6,8 @@ gulp.task('default', function(cb) {
 	runSequence(
 		'clean',
 		'concatcss',
-		[ 'inliner', 'images'],
+		['template', 'images'],
 		'watch',
 		cb
 	);
 });
-
