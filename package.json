@@ -1,11 +1,11 @@
 {
   "name": "Email",
   "description": "Email Development Framework",
-  "version": "0.0.2",
-  "homepage": "https://github.com/dudeonthehorse/Email/",
+  "version": "1.1.0",
+  "homepage": "https://github.com/dudeonthehorse/kilogram/",
   "repository": {
     "type": "git",
-    "url": "git@github.com:dudeonthehorse/Email.git"
+    "url": "git@github.com:dudeonthehorse/kilogram.git"
   },
   "author": "Arthur Koch <dudeonthehorse@gmail.com>",
   "license": "MIT",
@@ -15,6 +15,7 @@
     "gulp-concat": "2.6.0",
     "gulp-html-minifier": "0.1.6",
     "gulp-inline-css": "3.0.0",
+    "gulp-install": "^0.6.0",
     "gulp-nunjucks-render": "1.0.0",
     "require-dir": "0.3.0",
     "run-sequence": "1.1.2"
