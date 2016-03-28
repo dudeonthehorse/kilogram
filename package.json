@@ -1,14 +1,21 @@
 {
   "name": "kilogram",
-  "description": "Email Development Framework",
   "version": "1.1.0",
+  "description": "Email Development Framework",
+  "author": "Arthur Koch <dudeonthehorse@gmail.com>",
+  "license": "MIT",
   "homepage": "https://github.com/dudeonthehorse/kilogram/",
   "repository": {
     "type": "git",
     "url": "git@github.com:dudeonthehorse/kilogram.git"
   },
-  "author": "Arthur Koch <dudeonthehorse@gmail.com>",
-  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\""
+  },
+  "keywords": [
+    "email", "html", "css", "outlook", "gmail"
+  ],
   "dependencies": {
     "del": "2.0.2",
     "gulp": "3.9.0",

@@ -1,0 +1,24 @@
+/* Media Queries */
+
+@media only screen and (max-width: 400px) {
+    .two-columns .column {
+        max-width: 100% !important;
+    }
+    .three-columns .column {
+        max-width: 49.9% !important;
+    }
+    .four-columns .column {
+        max-width: 100% !important;
+    }
+}
+@media screen and (min-width: 401px) and (max-width: 635px) {
+    .two-columns .column {
+        max-width: 50% !important;
+    }
+    .three-columns .column {
+        max-width: 33.33% !important;
+    }
+    .four-columns .column {
+        max-width: 100% !important;
+    }
+}
