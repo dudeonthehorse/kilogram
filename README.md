@@ -1,39 +1,36 @@
-#Email Development Framework
-Фреймворк для клевой верстки email рассылок. Иными словами - бутстрап для писем.
+#Why it's awesome?
+Kilogram provides a minimal setup of styles, template engine and sweet tools for a fast and clean email development.
 
-<a href="http://dudeonthehorse.github.io/kilogram/">Демо здесь</a>
+#Contents
+- Bulletproof Email Template. <a href="http://dudeonthehorse.github.io/kilogram/">See Demo</a>
+- Mozilla Nunjucks Template Engine
+- CSS Inliner
+- HTML Minifier
 
-#Основная ветка
-В основной ветке репозитория расположен шаблон письма на основе моего подхода к верстке писем. Отдельное спасибо Nicole Merlin https://github.com/emailwizardry. Многие идеи я перенял у нее. Если вы хотите использовать этот шаблон в своих целях, то перед использованием на продакшене, объединяйте файл стилей с основным файлом верстки и прогоняйте полученный код через http://inliner.cm/
+#Getting Started
+1. <a href="https://github.com/dudeonthehorse/kilogram/archive/dev.zip">Download</a> Kilogram
+2. Use "$ npm install" command in repository folder to install dependencies
+3. Run "$ gulp" in project folder to launch builder and project watcher
+4. Have fun!
 
-#Dev ветка
-Здесь у нас уже более полноценная для разработки писем вещь. Для начала работы, вам необходимо завести на своей машине NodeJS и клонировать репозиторий. Находясь в корневой папке, выполните команду:
-
-$ npm install
-
-и менеджер пакетов подтянет все необходимые модули. В папке projects располагаются проекты, над которыми ведется разработка. Для того, чтобы запустить gulp сборщик писем и инлайнер стилей, а также минификатор для build версии, выполните команду:
-
-$ gulp
-
-находясь в папке проекта. И тут начинается волшебство. Работу над проектом мы ведем в папке "dev". В это время gulp watcher в реальном времени отслеживает все изменения верстки и делает работоспособный билд в папке "build". Билд объединяет все файлы стилей шаблона в один, подключает его к файлу верстки и инлайнит все необходимые стили по DOM структуре. После чего код полученного письма минифицируется.
-
-Спасибо Александру Зидыганову https://github.com/csscoderRU/ за участие в развитии фреймворка.
-
-#Поддержка почтовых клиентов
-- MS Outlook 2003-2007
-- MS Outlook 2010-2013
+#Email Clients Support
+- All versions of desktop Outlook
+- Office 365 (web)
 - Outlook.com (web, iOS, android, windows phone)
 - Thunderbird (windows)
-- AOL (iOS)
-- Yahoo! (web, iOS)
-- Google Inbox (iOS, android)
+- AOL mail (iOS)
+- Yahoo! mail (web, iOS, android)
+- Google Inbox (web, iOS, android)
 - Gmail (web, iOS, android)
-- Mail.ru (web, iOS)
-- Rambler.ru (web)
-- Yandex mail (web, iOS, android)
+- Mail.ru (web, iOS, android)
 - myMail (iOS, android)
-- Sparrow (OSX, iOS) <i>deleted from Apple Store</i>
-- Airmail (OSX)
-- Apple Mail (OSX, iOS)
-- Mailbox (OSX, iOS, android)
+- Rambler mail (web, iOS, android)
+- Yandex mail (web, iOS, android)
+- Airmail (iOS, OSX)
+- Apple Mail (iOS, OSX)
 - Spark (iOS)
+- Polymail (iOS, OSX)
+
+#Special Thanks
+- @emailwizardry
+- @csscoderRU
