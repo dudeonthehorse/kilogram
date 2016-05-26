@@ -14,7 +14,11 @@
     "test": "echo \"Error: no test specified\""
   },
   "keywords": [
-    "email", "html", "css", "outlook", "gmail"
+    "email",
+    "html",
+    "css",
+    "outlook",
+    "gmail"
   ],
   "dependencies": {
     "del": "2.0.2",
@@ -28,6 +32,7 @@
     "run-sequence": "1.1.2"
   },
   "devDependencies": {
+    "browser-sync": "^2.12.8",
     "gulp-cache": "^0.4.3",
     "gulp-concat": "^2.6.0",
     "gulp-imagemin": "^2.4.0",

@@ -5,6 +5,7 @@ var htmlmin = require('gulp-html-minifier');
 var notify = require("gulp-notify");
 var nunjucksRender = require('gulp-nunjucks-render');
 var plumber = require('gulp-plumber');
+var browserSync = require('browser-sync').get('sync');
 
 gulp.task('template', function() {
 	nunjucksRender.nunjucks.configure([config.cwd], {
@@ -29,5 +30,8 @@ gulp.task('template', function() {
 			message: 'Build Done',
 			sound: "Pop"
 		}))
-		.pipe(gulp.dest(config.dest));
+		.pipe(gulp.dest(config.dest))
+		.pipe(browserSync.reload({
+			stream: true
+		}));
 });

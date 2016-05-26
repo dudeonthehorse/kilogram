@@ -7,6 +7,7 @@ gulp.task('default', function(cb) {
 		'clean',
 		'concatcss',
 		['template', 'images'],
+		'browserSync',
 		'watch',
 		cb
 	);
