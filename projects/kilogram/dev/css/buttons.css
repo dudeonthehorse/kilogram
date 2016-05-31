@@ -1,0 +1,17 @@
+.button {
+    font-family: helvetica;
+    line-height: 12px;
+    font-size: 12px;
+    color:#ffffff !important;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: #3399ff;
+    border:#3399ff 10px solid;
+    padding:0 10px;
+    border-radius: 2px;
+    display: inline-block;
+}
+
+.button span {
+    color:#ffffff;
+}
