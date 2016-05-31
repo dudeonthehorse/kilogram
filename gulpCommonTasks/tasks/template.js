@@ -1,7 +1,7 @@
 var gulp = require('gulp');
 var config = require('../config').template;
 var inlineCss = require('gulp-inline-css');
-var htmlmin = require('gulp-html-minifier');
+var htmlmin = require('gulp-htmlmin');
 var notify = require("gulp-notify");
 var nunjucksRender = require('gulp-nunjucks-render');
 var plumber = require('gulp-plumber');
@@ -22,8 +22,9 @@ gulp.task('template', function() {
 			removeStyleTags: false
 		}))
 		.pipe(htmlmin({
+			minifyCSS: true,
 			collapseWhitespace: true,
-			minifyCSS: true
+			processConditionalComments: true
 		}))
 		.pipe(notify({
 			title: 'Email',
