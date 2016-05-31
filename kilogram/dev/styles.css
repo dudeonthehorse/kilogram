@@ -1,0 +1,94 @@
+body {
+    background-color: #ffffff;
+}
+
+.body {
+    text-align: center;
+    background-color: #ffffff;
+    table-layout: fixed;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+a {
+    color: #3399ff !important;
+    text-decoration: underline;
+}
+
+a span {
+    color: #3399ff;
+}
+
+a img {
+    border: 0;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td {
+    padding:0;
+    text-align: left;
+}
+
+h1 {
+    font-family: 'helvetica', arial;
+    font-size: 24px;
+    font-weight: normal;
+    font-weight: 300;
+    color: #000000;
+    text-align: left;
+    line-height: 28px;
+    Margin:0 0 .5em 0;
+}
+
+p, div {
+    font-family: 'helvetica', arial;
+    font-size: 14px;
+    color: #000000;
+    text-align: left;
+    line-height: 20px;
+    Margin: 1em 0;
+    font-weight: 300;
+}
+
+div {
+    Margin: 0;
+}
+
+.button {
+    font-family: helvetica;
+    line-height: 12px;
+    font-size: 12px;
+    color:#ffffff !important;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: #3399ff;
+    border:#3399ff 10px solid;
+    padding:0 10px;
+    border-radius: 2px;
+    display: inline-block;
+}
+
+.button span {
+    color:#ffffff;
+}
+
+.container {
+    width:100%;
+    max-width: 500px
+}
+
+.credits, .preheader {
+    font-size: 11px;
+    line-height: 14px;
+    color:#999999;
+    Margin:1em 0 2em 0;
+}
+
+.signature {
+    font-size: 12px;
+    line-height: 16px;
+    Margin:5px 0;
+}

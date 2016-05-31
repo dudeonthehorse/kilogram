@@ -1,0 +1,33 @@
+/* Custom CSS */
+
+.contacts .h1 {
+    text-align: center;
+}
+
+.contacts .paragraph {
+    text-align: center;
+}
+
+.content {
+    padding:0 0 0 0;
+}
+
+.credits .paragraph {
+    color: #999999;
+    font-size: 12px;
+    text-align: center;
+}
+
+.header .h1 {
+    text-align: center;
+}
+
+.header .paragraph {
+    text-align: center;
+    font-size: 11px;
+    color:#666666;
+}
+
+.logo td {
+    text-align: center;
+}
