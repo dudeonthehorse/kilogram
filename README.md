@@ -2,10 +2,13 @@
 Kilogram provides a minimal setup of styles, template engine and sweet tools for a fast and clean email development.
 
 #Contents
-- Bulletproof Email Template. <a href="http://dudeonthehorse.github.io/kilogram/">See Demo</a>
+- Bulletproof Email Templates:
+    - <a href="http://dudeonthehorse.github.io/kilogram/">v2.0 Simple Newsletter</a>   
+    - <a href="http://dudeonthehorse.github.io/kilogram_old/">v1.0</a>
 - Mozilla Nunjucks Template Engine
 - CSS Inliner
 - HTML Minifier
+- - And some little things :)
 
 #Getting Started
 1. <a href="https://github.com/dudeonthehorse/kilogram/archive/dev.zip">Download</a> Kilogram
