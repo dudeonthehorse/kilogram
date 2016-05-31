@@ -24,6 +24,7 @@
     "del": "2.0.2",
     "gulp": "3.9.1",
     "gulp-concat": "2.6.0",
+    "gulp-htmlmin": "^2.0.0",
     "gulp-inline-css": "3.0.0",
     "gulp-install": "^0.6.0",
     "gulp-nunjucks-render": "1.0.0",
