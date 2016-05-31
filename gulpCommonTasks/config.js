@@ -16,7 +16,7 @@ module.exports = {
 		src: 'css/*.css',
 		dest: dev,
 		cwd: dev,
-		allFile: 'allstyles.css'
+		allFile: 'styles.css'
 	},
 
 	images: {

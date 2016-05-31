@@ -8,29 +8,29 @@ var plumber = require('gulp-plumber');
 var browserSync = require('browser-sync').get('sync');
 
 gulp.task('template', function() {
-	nunjucksRender.nunjucks.configure([config.cwd], {
-		watch: false
-	});
-	return gulp.src(config.src, {
-			cwd: config.cwd
-		})
-		.pipe(plumber({
-			errorHandler: notify.onError("Error: <%= error.message %>")
-		}))
-		.pipe(nunjucksRender())
-		.pipe(inlineCss({
-			removeStyleTags: false
-		}))
-		.pipe(htmlmin({
-			collapseWhitespace: true,
-			minifyCSS: true
-		}))
-		.pipe(notify({
-			title: 'Email',
-			message: 'Build Done',
-			sound: "Pop"
-		}))
-		.pipe(gulp.dest(config.dest))
+    nunjucksRender.nunjucks.configure([config.cwd], {
+        watch: false
+    });
+    return gulp.src(config.src, {
+            cwd: config.cwd
+        })
+        .pipe(plumber({
+            errorHandler: notify.onError("Error: <%= error.message %>")
+        }))
+        .pipe(nunjucksRender())
+        .pipe(inlineCss({
+            removeStyleTags: false
+        }))
+        .pipe(htmlmin({
+            collapseWhitespace: true,
+            minifyCSS: true
+        }))
+        .pipe(notify({
+            title: 'Kilogram',
+            message: 'Build Done',
+            sound: "Pop"
+        }))
+        .pipe(gulp.dest(config.dest))
 		.pipe(browserSync.reload({
 			stream: true
 		}));

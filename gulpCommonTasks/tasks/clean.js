@@ -3,7 +3,6 @@ var del = require('del');
 var runSequence = require('run-sequence');
 var config  = require('../config');
 
-// Default task
 gulp.task('clean', function() {
 	runSequence(
 		['concatcss-del', 'build-del']
