@@ -3,8 +3,8 @@ Kilogram provides a minimal setup of styles, template engine and sweet tools for
 
 #Contents
 - Bulletproof Email Templates:
-    - <a href="http://dudeonthehorse.github.io/kilogram/">v2.0 Simple Newsletter</a>   
-    - <a href="http://dudeonthehorse.github.io/kilogram_old/">v1.0</a>
+    - <a href="http://dudeonthehorse.github.io/kilogram/kilogram/build/simple.html">v2.0 Simple Newsletter</a>   
+    - <a href="http://dudeonthehorse.github.io/kilogram/kilogram_alpha/build/index.html">v1.0</a>
 - Mozilla Nunjucks Template Engine
 - CSS Inliner
 - HTML Minifier
