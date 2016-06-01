@@ -21,6 +21,10 @@ gulp.task('template', function() {
 		.pipe(inlineCss({
 			removeStyleTags: false
 		}))
+		.pipe(inlineCss({
+			removeLinkTags: false,
+			preserveMediaQueries: true
+		}))
 		.pipe(htmlmin({
 			minifyCSS: true,
 			collapseWhitespace: true,
