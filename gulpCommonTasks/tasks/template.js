@@ -19,9 +19,6 @@ gulp.task('template', function() {
 		}))
 		.pipe(nunjucksRender())
 		.pipe(inlineCss({
-			removeStyleTags: false
-		}))
-		.pipe(inlineCss({
 			removeLinkTags: false,
 			preserveMediaQueries: true
 		}))
