@@ -8,7 +8,7 @@ Kilogram provides a minimal setup of styles, template engine and sweet tools for
 - Mozilla Nunjucks Template Engine
 - CSS Inliner
 - HTML Minifier
-- - And some little things :)
+- And some little things :)
 
 #Getting Started
 1. <a href="https://github.com/dudeonthehorse/kilogram/archive/dev.zip">Download</a> Kilogram
