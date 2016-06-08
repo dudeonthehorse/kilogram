@@ -20,12 +20,14 @@ gulp.task('template', function() {
 		.pipe(nunjucksRender())
 		.pipe(inlineCss({
 			removeLinkTags: false,
-			preserveMediaQueries: true
+			preserveMediaQueries: true,
+			xmlMode: true
 		}))
 		.pipe(htmlmin({
 			minifyCSS: true,
 			collapseWhitespace: true,
-			processConditionalComments: true
+			processConditionalComments: true,
+			keepClosingSlash: true
 		}))
 		.pipe(notify({
 			title: 'Email',
