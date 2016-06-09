@@ -6,6 +6,7 @@ gulp.task('watch', function () {
 	gulp.watch(config.concatcss.src, { cwd: config.concatcss.cwd }, ['build']);
 	gulp.watch(config.template.src, { cwd: config.template.cwd }, ['build']);
 	gulp.watch(config.template.src, { cwd: config.template.cwd + '/partials' }, ['build']);
+    gulp.watch(config.template.src, { cwd: config.template.cwd + '/extends' }, ['build']);
 	gulp.watch(config.images.src, { cwd: config.images.cwd }, ['images']);
 });
 
