@@ -26,7 +26,7 @@ gulp.task('template', function() {
 		.pipe(htmlmin({
 			minifyCSS: true,
 			collapseWhitespace: true,
-			processConditionalComments: true,
+			processConditionalComments: false,
 			keepClosingSlash: true
 		}))
 		.pipe(notify({
