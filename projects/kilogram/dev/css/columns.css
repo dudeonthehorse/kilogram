@@ -1,4 +1,16 @@
+.column {
+    font-size: 14px;
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+}
+
 .container {
-    width:100%;
-    max-width: 500px
+    width: 100%;
+    max-width: 600px;
+}
+
+.row {
+    text-align: center;
+    font-size: 0;
 }

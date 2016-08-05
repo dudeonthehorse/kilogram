@@ -1,5 +1,9 @@
 body {
     background-color: #ffffff;
+    /*
+    padding: 0;
+    Margin: 0;
+    */
 }
 
 .body {
@@ -32,7 +36,7 @@ td {
     text-align: left;
 }
 
-h1 {
+h1, h2, h3 {
     font-family: 'helvetica', arial;
     font-size: 24px;
     font-weight: normal;
@@ -40,6 +44,7 @@ h1 {
     color: #000000;
     text-align: left;
     line-height: 28px;
+    display: block;
     Margin:0 0 .5em 0;
 }
 
@@ -51,6 +56,7 @@ p, div {
     line-height: 20px;
     Margin: 1em 0;
     font-weight: 300;
+    display: block;
 }
 
 div {
