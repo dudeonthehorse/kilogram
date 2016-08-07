@@ -6,6 +6,7 @@ var notify = require("gulp-notify");
 var nunjucksRender = require('gulp-nunjucks-render');
 var plumber = require('gulp-plumber');
 var browserSync = require('browser-sync').get('sync');
+var typograf = require('gulp-typograf');
 
 gulp.task('template', function() {
 	nunjucksRender.nunjucks.configure([config.cwd], {
@@ -23,12 +24,16 @@ gulp.task('template', function() {
 			preserveMediaQueries: true,
 			xmlMode: true
 		}))
-		.pipe(htmlmin({
+        .pipe(typograf({
+            lang: 'ru',
+            mode: 'digit'
+        }))
+		/*.pipe(htmlmin({
 			minifyCSS: true,
 			collapseWhitespace: true,
 			processConditionalComments: false,
 			keepClosingSlash: true
-		}))
+		}))*/
 		.pipe(notify({
 			title: 'Email',
 			message: 'Build Done',

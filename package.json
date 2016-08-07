@@ -29,7 +29,8 @@
     "gulp-install": "^0.6.0",
     "gulp-nunjucks-render": "1.0.0",
     "require-dir": "0.3.0",
-    "run-sequence": "1.1.2"
+    "run-sequence": "1.1.2",
+    "gulp-typograf": "1.2.0"
   },
   "devDependencies": {
     "browser-sync": "^2.12.8",
