@@ -7,11 +7,11 @@ body {
 }
 
 .body {
-    text-align: center;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
     background-color: #ffffff;
     table-layout: fixed;
-    -webkit-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%;
+    text-align: center;
 }
 
 a {
@@ -43,26 +43,27 @@ td {
 }
 
 h1, h2, h3 {
-    font-family: 'helvetica', arial;
-    font-size: 24px;
+    Margin:0 0 .5em 0;
+    color: #000000;
+    display: block;
+    font-family: 'helvetica', arial, sans-serif;
+    font-size: 18px;
     font-weight: normal;
     font-weight: 300;
-    color: #000000;
     text-align: left;
     line-height: 28px;
-    display: block;
-    Margin:0 0 .5em 0;
+
 }
 
 p, div {
-    font-family: 'helvetica', arial;
-    font-size: 14px;
-    color: #000000;
-    text-align: left;
-    line-height: 20px;
     Margin: 1em 0;
-    font-weight: 300;
+    color: #404040;
     display: block;
+    font-family: 'helvetica', arial, sans-serif;;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    text-align: left;
 }
 
 div {
@@ -71,7 +72,7 @@ div {
 }
 
 .cover img {
-    width:100%;
-    max-width: 600px;
     display: block;
+    max-width: 600px;
+    width:100%;
 }

@@ -1,16 +1,22 @@
+.cell {
+    padding:0;
+}
+
 .column {
-    font-size: 14px;
     display: inline-block;
-    width: 100%;
+    font-size: 14px;
+    max-width: 500px;
     vertical-align: top;
+    width: 100%;
 }
 
 .container {
-    width: 100%;
+    margin:0 auto;
     max-width: 600px;
+    width: 100%;
 }
 
 .row {
-    text-align: center;
     font-size: 0;
+    text-align: center;
 }
