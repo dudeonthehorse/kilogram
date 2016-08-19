@@ -62,7 +62,7 @@ p, div {
     font-family: 'helvetica', arial, sans-serif;;
     font-size: 14px;
     font-weight: 300;
-    line-height: 22px;
+    line-height: 20px;
     text-align: left;
 }
 
@@ -71,8 +71,23 @@ div {
     display: block;
 }
 
+.code {
+    font-family: 'Consolas', 'Courier New', Courier, sans-serif;;
+    color:#999999;
+    font-weight: normal;
+    padding:0 5px;
+}
+
 .cover img {
     display: block;
     max-width: 600px;
     width:100%;
+}
+
+.list-item {
+    Margin:0 0 .5em .5em;
+}
+
+.list-item .bullit {
+    color:#3399ff;
 }
