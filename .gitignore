@@ -1,7 +1,7 @@
 node_modules/
 projects/
-projects/!kilogram
-projects/!kilogram_alpha
+projects/!kilogram/
+projects/!kilogram_alpha/
 build
 .DS_Store
 styles.css
