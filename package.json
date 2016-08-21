@@ -28,9 +28,11 @@
     "gulp-inline-css": "3.0.0",
     "gulp-install": "^0.6.0",
     "gulp-nunjucks-render": "1.0.0",
+    "gulp-typograf": "1.2.0",
+    "marked": "^0.3.6",
+    "nunjucks-markdown": "^2.0.0",
     "require-dir": "0.3.0",
-    "run-sequence": "1.1.2",
-    "gulp-typograf": "1.2.0"
+    "run-sequence": "1.1.2"
   },
   "devDependencies": {
     "browser-sync": "^2.12.8",

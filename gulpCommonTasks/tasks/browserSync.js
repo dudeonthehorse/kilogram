@@ -7,7 +7,8 @@ gulp.task('browserSync', function() {
 		ui: false,
 		notify: false,
 		server: {
-			baseDir: config.build
+			baseDir: config.build,
+			directory: true
 		}
 	});
 });
