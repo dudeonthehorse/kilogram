@@ -18,7 +18,7 @@
     <![endif]-->
 </head>
 
-<body>
+<body class="simple">
     <div class="body">
         <!--[if (gte mso 9)|(IE)]>
 		<table width="600" align="center">
@@ -27,31 +27,38 @@
 		<![endif]-->
         <table class="container" cellpadding="0" align="center">
             <tr>
-                <td class="row content">
+                <td class="row">
                     <div class="column">
                         <table width="100%">
                             <tr>
                                 <td class="cell">
                                     <p class="preheader">Fucking great preheader!</p>
-                                    <br/>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="row content">
+                    <div class="column">
+                        <table width="100%">
+                            <tr>
+                                <td class="cell">
                                     {% block content %}{% endblock %}
-                                    <br/>
-                                    <br/>
-                                    <table>
-                                        <tr>
-                                            <td valign="top" rowspan="2" style="padding:0 10px 0 0;"><img src="https://scontent.xx.fbcdn.net/v/t1.0-1/p160x160/14022330_1124101367656995_906770609414284026_n.jpg?oh=d601969ffcbc96437974f4d4d008d487&oe=584B8099" width="48" height="48" style="border-radius:100px;"
-                                                    alt="" /></td>
-                                            <td>
-                                                <div>
-                                                    Professor Koch
-                                                </div>
-                                                <div style="font-size:12px;">
-                                                    <a href="http://facebook.com/dudeonthehorse" target="_blank"><span>Facebook</span></a>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                    <br/>
+                                    {% include "../partials/signature.html" %}
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="row">
+                    <div class="column">
+                        <table width="100%">
+                            <tr>
+                                <td class="cell">
                                     <p class="credits">You recieved this email because fuck you. Eat shit. <a href="#" target="_blank"><span>Unsubscribe</span></a></p>
                                 </td>
                             </tr>
