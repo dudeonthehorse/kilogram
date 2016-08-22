@@ -12,8 +12,8 @@ Kilogram provides a minimal setup of styles, template engine and sweet tools for
 
 #Getting Started
 1. <a href="https://github.com/dudeonthehorse/kilogram/archive/dev.zip">Download</a> Kilogram
-2. Use "$ npm install" command in repository folder to install dependencies
-3. Run "$ gulp" in project folder to launch builder and project watcher
+2. Go to `project_name` folder using `$ ls` or `$ dir` command
+3. Run `$ gulp` to launch builder and project watcher
 4. Have fun!
 
 #Email Clients Support
