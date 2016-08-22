@@ -7,11 +7,18 @@ var nunjucksRender = require('gulp-nunjucks-render');
 var plumber = require('gulp-plumber');
 var browserSync = require('browser-sync').get('sync');
 var typograf = require('gulp-typograf');
+var markdown = require('nunjucks-markdown');
+var marked = require('marked');
+
+
 
 gulp.task('template', function() {
-	nunjucksRender.nunjucks.configure([config.cwd], {
+	var env = nunjucksRender.nunjucks.configure([config.cwd], {
 		watch: false
 	});
+
+	markdown.register(env, marked);
+
 	return gulp.src(config.src, {
 			cwd: config.cwd
 		})
