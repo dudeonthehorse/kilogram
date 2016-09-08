@@ -10,8 +10,6 @@ var typograf = require('gulp-typograf');
 var markdown = require('nunjucks-markdown');
 var marked = require('marked');
 
-
-
 gulp.task('template', function() {
 	var env = nunjucksRender.nunjucks.configure([config.cwd], {
 		watch: false

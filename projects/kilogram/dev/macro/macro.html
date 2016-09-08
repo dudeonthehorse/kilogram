@@ -1,7 +1,5 @@
-{% macro heading(text) %}
-<tr>
-    <td class="subject row">
-        <h1>{{text}}</h1>
-    </td>
-</tr>
+{% macro button(href, text) %}
+    <!--[if (gte mso 9)|(IE)]><table><tr><td style="padding:10px 30px; background-color:#3399ff;"><![endif]-->
+    <a href="{{ href }}" class="button" target="_blank"><span>{{ text }}</span></a>
+    <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
 {% endmacro %}

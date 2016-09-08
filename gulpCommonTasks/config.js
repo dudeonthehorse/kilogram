@@ -13,7 +13,7 @@ module.exports = {
 	},
 
 	concatcss: {
-		src: 'css/*.css',
+		src: 'css/*.less',
 		dest: dev,
 		cwd: dev,
 		allFile: 'styles.css'
