@@ -25,7 +25,7 @@ gulp.task('template', function() {
 		}))
 		.pipe(nunjucksRender())
 		.pipe(inlineCss({
-			removeLinkTags: false,
+			removeLinkTags: true,
 			preserveMediaQueries: true,
 			xmlMode: true
 		}))
@@ -40,8 +40,8 @@ gulp.task('template', function() {
 			keepClosingSlash: true
 		}))*/
 		.pipe(notify({
-			title: 'Email',
-			message: 'Build Done',
+			title: 'Kilogram',
+			message: "Boooya! I'm done!",
 			sound: "Pop"
 		}))
 		.pipe(gulp.dest(config.dest))

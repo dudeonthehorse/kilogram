@@ -1,18 +1,16 @@
 @layout-width: 600px;
 @column-width: 500px;
-
 @bg-color: #ffffff;
 @color: #000000;
+@button-color: #ffffff;
 @brand-color: #3399ff;
-
-@font: 'helvetica', arial, sans-serif;
-
+@font-family: 'helvetica', arial, sans-serif;
+@font-size: 14px;
 body {
     background-color: @bg-color;
     /* padding: 0;
     Margin: 0; */
 }
-
 .body {
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
@@ -20,79 +18,79 @@ body {
     table-layout: fixed;
     text-align: center;
 }
-
 a {
     color: @brand-color !important;
     text-decoration: underline;
 }
-
 a span {
     color: @brand-color;
 }
-
 a img {
     border: 0;
 }
-
 img {
-    -ms-interpolation-mode:bicubic;
+    -ms-interpolation-mode: bicubic;
 }
-
 table {
     border-collapse: collapse;
-    mso-table-lspace: 0pt;
-    mso-table-rspace: 0pt;
+    mso-table-lspace: 0;
+    mso-table-rspace: 0;
 }
-
 td {
-    padding:0;
+    padding: 0;
 }
-
-h1, h2, h3 {
-    Margin:0 0 .5em 0;
+h1,
+h2,
+h3 {
+    Margin: 2em 0 0.5em 0;
     color: @color;
     display: block;
-    font-family: @font;
+    font-family: @font-family;
     font-size: 18px;
     font-weight: normal;
     font-weight: 300;
     line-height: 28px;
     text-align: left;
-
 }
-
+h3 {
+    font-size: @font-size;
+    Margin:.5em 0;
+    line-height: 20px;
+}
 p {
     Margin: 1em 0;
     color: @color;
     display: block;
-    font-family: @font;
-    font-size: 14px;
+    font-family: @font-family;
+    font-size: @font-size;
+    font-weight: normal;
     font-weight: 300;
     line-height: 22px;
     text-align: left;
 }
-
-.code {;
-    color:#999999;
+td {
+    padding:0;
+}
+.code {
+    background-color: #f7f7f7;
+    border-radius: 2px;
+    color: #999999;
+    display: inline-block;
     font-family: 'Consolas', 'Courier New', Courier, sans-serif;
     font-weight: normal;
-    padding:0 5px;
+    padding: 0 5px;
 }
-
 .cover img {
     display: block;
-    max-width: 600px;
-    width:100%;
+    max-width: @layout-width;
+    width: 100%;
 }
-
 .ul {
-    Margin:0 0 2em 0;
+    Margin: 0 0 2em 0;
 }
-
 .ul .li {
-    Margin:0 0 .5em .5em;
+    Margin: 0 0 0.5em 0.5em;
 }
-
 .ul .li .bullit {
     color: @brand-color;
 }

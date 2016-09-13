@@ -2,6 +2,8 @@ node_modules/
 projects/**
 !/projects/kilogram/
 !/projects/kilogram_alpha/
+projects/kilogram/dev/goods.html
+projects/kilogram/dev/css/goods.less
 build
 .DS_Store
 styles.css

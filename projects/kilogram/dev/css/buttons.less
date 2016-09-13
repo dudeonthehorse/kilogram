@@ -1,17 +1,19 @@
 .button {
     background-color: @brand-color;
     border-radius: 2px;
-    color:#ffffff !important;
+    color: @button-color !important;
     display: inline-block;
-    font-family: sans-serif;
+    font-family: @font-family;
     font-size: 12px;
     font-weight: bold;
     letter-spacing: 1.2px;
-    padding:10px 30px;
+    padding: 10px 30px;
     text-align: center;
     text-decoration: none;
+    text-transform: uppercase;
+    line-height: 1.2em;
+    min-width: 100px - 30px*2;
 }
-
 .button span {
-    color:#ffffff;
+    color: @button-color;
 }
