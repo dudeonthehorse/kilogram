@@ -6,6 +6,13 @@
     <![endif]-->
 {% endmacro %}
 
+{% macro msoSep(valign, tdWidth, style) %}
+    <!--[if (gte mso 9)|(IE)]>
+    </td>
+    <td valign="{{ valign }}" width="{{ tdWidth }}" style="{{ style }}">
+    <![endif]-->
+{% endmacro %}
+
 {% macro msoEnd() %}
     <!--[if (gte mso 9)|(IE)]>
     </td>
