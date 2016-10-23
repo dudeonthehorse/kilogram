@@ -21,8 +21,11 @@
     <![endif]-->
 {% endmacro %}
 
-{% macro button(href, text) %}
+{% macro button(href, text, class) %}
+    {% if(not(class)) %}
+        {% set class = "button" %}
+    {% endif %}
     {{ msoStart('auto', 'top', 'auto', 'padding:10px 30px; background-color:#3399ff;') }}
-    <a class="button" href="{{ href }}" target="_blank"><span>{{ text }}</span></a>
+    <a class="{{class}}" href="{{ href }}" target="_blank"><span>{{ text }}</span></a>
     {{ msoEnd() }}
 {% endmacro %}
