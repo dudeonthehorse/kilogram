@@ -7,13 +7,22 @@
     font-size: 12px;
     font-weight: bold;
     letter-spacing: 1.2px;
+    line-height: 1.2em;
+    min-width: 100px - 30px*2;
     padding: 10px 30px;
     text-align: center;
     text-decoration: none;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
     text-transform: uppercase;
-    line-height: 1.2em;
-    min-width: 100px - 30px*2;
 }
 .button span {
     color: @button-color;
+}
+.button-transparent {
+    background-color: @bg-color;
+    color: @brand-color !important;
+    text-decoration: underline;
+}
+.button-transparent span {
+    color: @brand-color;
 }
