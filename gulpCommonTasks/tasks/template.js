@@ -29,10 +29,10 @@ gulp.task('template', function() {
 			preserveMediaQueries: true,
 			xmlMode: true
 		}))
-        .pipe(typograf({
+        /*.pipe(typograf({
             lang: 'ru',
             mode: 'digit'
-        }))
+        }))*/
 		/*.pipe(htmlmin({
 			minifyCSS: true,
 			collapseWhitespace: true,
