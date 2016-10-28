@@ -8,7 +8,6 @@ var config  = require('../config').concatcss;
 gulp.task('concatcss', function() {
 	return gulp.src(config.src, {cwd: config.cwd})
 		.pipe(concat(config.allFile))
-        .pipe(less())
 		.pipe(gulp.dest(config.dest));
 });
 

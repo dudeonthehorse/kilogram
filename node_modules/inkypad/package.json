@@ -1,0 +1,90 @@
+{
+  "name": "inky",
+  "version": "1.3.7",
+  "description": "Convert a simple HTML syntax into tables compatible with Foundation for Emails.",
+  "author": {
+    "name": "ZURB",
+    "email": "foundation@zurb.com",
+    "url": "http://foundation.zurb.com"
+  },
+  "keywords": [
+    "ink",
+    "foundation",
+    "email",
+    "template"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --compilers js:babel-register",
+    "browser": "gulp browser"
+  },
+  "dependencies": {
+    "cheerio": "^0.20.0",
+    "foundation-emails": "^2.2.0",
+    "mkdirp": "^0.5.1",
+    "object-values": "^1.0.0",
+    "through2": "^2.0.0",
+    "vinyl-fs": "^2.3.0"
+  },
+  "devDependencies": {
+    "assert-html-equal": "^1.0.0",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-register": "^6.4.3",
+    "browserify": "^13.1.0",
+    "chalk": "^1.1.1",
+    "gulp": "git+https://github.com/gulpjs/gulp.git#4.0",
+    "gulp-uglify": "^2.0.0",
+    "mocha": "^2.4.5",
+    "rimraf": "^2.5.1",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zurb/inky.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zurb/inky/issues"
+  },
+  "license": "MIT",
+  "gitHead": "39a43c34a09e47a00146ca107c7f7d2e7e9a7f2c",
+  "homepage": "https://github.com/zurb/inky#readme",
+  "_id": "inky@1.3.7",
+  "_shasum": "1d1f837ba8213a2bec8414f4fa738d38a807d38e",
+  "_from": "inky@latest",
+  "_npmVersion": "3.9.6",
+  "_nodeVersion": "4.2.2",
+  "_npmUser": {
+    "name": "kbal11",
+    "email": "kball@zurb.com"
+  },
+  "dist": {
+    "shasum": "1d1f837ba8213a2bec8414f4fa738d38a807d38e",
+    "tarball": "https://registry.npmjs.org/inky/-/inky-1.3.7.tgz"
+  },
+  "maintainers": [
+    {
+      "name": "eddiedean",
+      "email": "christopher.oyler@gmail.com"
+    },
+    {
+      "name": "kbal11",
+      "email": "kball@zurb.com"
+    },
+    {
+      "name": "rafibomb",
+      "email": "rafi@zurb.com"
+    },
+    {
+      "name": "tdhartwick",
+      "email": "tim@zurb.com"
+    }
+  ],
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/inky-1.3.7.tgz_1472848426999_0.3580784925725311"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/inky/-/inky-1.3.7.tgz",
+  "readme": "ERROR: No README data found!"
+}

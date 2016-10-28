@@ -3,6 +3,7 @@ var runSequence = require('run-sequence');
 var config = require('../config');
 
 gulp.task('watch', function () {
+	gulp.watch(config.less.src, { cwd: config.less.cwd }, ['build'])
 	gulp.watch(config.concatcss.src, { cwd: config.concatcss.cwd }, ['build']);
 	gulp.watch(config.template.src, { cwd: config.template.cwd }, ['build']);
 	gulp.watch(config.template.src, { cwd: config.template.cwd + '/extends' }, ['build']);
@@ -13,6 +14,7 @@ gulp.task('watch', function () {
 
 gulp.task('build', function(cb) {
 	runSequence(
+		'less',
 		'concatcss',
 		'template',
 		cb

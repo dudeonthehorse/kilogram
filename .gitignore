@@ -1,4 +1,5 @@
-node_modules/
+node_modules/*
+!node_modules/inkypad
 projects/**
 !/projects/kilogram/
 !/projects/kilogram_alpha/
@@ -8,3 +9,4 @@ build
 .DS_Store
 styles.css
 .idea
+.editorconfig

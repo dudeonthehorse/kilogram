@@ -1,39 +1,32 @@
-#Why it's awesome?
-Kilogram provides a minimal setup of styles, template engine and sweet tools for a fast and clean email development.
+#kilopad
+Kilopad is Kilogram`s fork with prepared custom html tags 
 
 #Contents
-- Bulletproof Email Templates:
-    - <a href="http://dudeonthehorse.github.io/kilogram/kilogram/build/simple.html">v2.0 Simple Newsletter</a>   
-    - <a href="http://dudeonthehorse.github.io/kilogram/kilogram_alpha/build/index.html">v1.0</a>
-- Mozilla Nunjucks Template Engine
+- Nunjucks Template Engine
+- Less
 - CSS Inliner
-- HTML Minifier
-- And some little things :)
 
-#Getting Started
-1. <a href="https://github.com/dudeonthehorse/kilogram/archive/dev.zip">Download</a> Kilogram
-2. Go to `project_name` folder using `$ ls` or `$ dir` command
-3. Run `$ gulp` to launch builder and project watcher
-4. Have fun!
+- Custom Inky! with Kilogram oriented html tags 
 
-#Email Clients Support
-- All versions of desktop Outlook
-- Office 365 (web)
-- Outlook.com (web, iOS, android, windows phone)
-- Thunderbird (windows)
-- AOL mail (iOS)
-- Yahoo! mail (web, iOS, android)
-- Google Inbox (web, iOS, android)
-- Gmail (web, iOS, android)
-- Mail.ru (web, iOS, android)
-- myMail (iOS, android)
-- Rambler mail (web, iOS, android)
-- Yandex mail (web, iOS, android)
-- Airmail (iOS, OSX)
-- Apple Mail (iOS, OSX)
-- Spark (iOS)
-- Polymail (iOS, OSX)
+#How to start
+1. Run `$ gulp` from project folder
+2. ...
+3. Profit
 
-#Special Thanks
-- @emailwizardry
-- @csscoderRU
+#Tags Support
+For Kilogram
+```html
+<wrapper class="any classes" any-attribute="put them here"></wrapper>
+<rower cols="number of cols from 1 to 3" class="any classes" any-attribute="put them here"></rower>
+<cols class="any classes" any-attribute="put them here"></cols>
+```
+Inky default
+```html
+<row></row>
+<container></container>
+<wrapper></wrapper>
+```
+
+#Original frameworks
+- https://github.com/dudeonthehorse/kilogram
+- https://github.com/zurb/inky

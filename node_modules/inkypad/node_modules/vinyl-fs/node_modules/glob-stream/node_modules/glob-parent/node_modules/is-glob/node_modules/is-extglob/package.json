@@ -1,0 +1,102 @@
+{
+  "name": "is-extglob",
+  "description": "Returns true if a string has an extglob.",
+  "version": "2.1.0",
+  "homepage": "https://github.com/jonschlinkert/is-extglob",
+  "author": {
+    "name": "Jon Schlinkert",
+    "url": "https://github.com/jonschlinkert"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonschlinkert/is-extglob.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jonschlinkert/is-extglob/issues"
+  },
+  "license": "MIT",
+  "files": [
+    "index.js"
+  ],
+  "main": "index.js",
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "devDependencies": {
+    "gulp-format-md": "^0.1.10",
+    "mocha": "^3.0.2"
+  },
+  "keywords": [
+    "bash",
+    "braces",
+    "check",
+    "exec",
+    "expression",
+    "extglob",
+    "glob",
+    "globbing",
+    "globstar",
+    "is",
+    "match",
+    "matches",
+    "pattern",
+    "regex",
+    "regular",
+    "string",
+    "test"
+  ],
+  "verb": {
+    "toc": false,
+    "layout": "default",
+    "tasks": [
+      "readme"
+    ],
+    "plugins": [
+      "gulp-format-md"
+    ],
+    "related": {
+      "list": [
+        "has-glob",
+        "is-glob",
+        "micromatch"
+      ]
+    },
+    "reflinks": [
+      "verb",
+      "verb-generate-readme"
+    ],
+    "lint": {
+      "reflinks": true
+    }
+  },
+  "gitHead": "8c3c7f47635920c31fcb9ccc1d2b6e40037bef54",
+  "_id": "is-extglob@2.1.0",
+  "_shasum": "33411a482b046bf95e6b0cb27ee2711af4cf15ad",
+  "_from": "is-extglob@>=2.1.0 <3.0.0",
+  "_npmVersion": "3.10.3",
+  "_nodeVersion": "6.7.0",
+  "_npmUser": {
+    "name": "jonschlinkert",
+    "email": "github@sellside.com"
+  },
+  "maintainers": [
+    {
+      "name": "jonschlinkert",
+      "email": "github@sellside.com"
+    }
+  ],
+  "dist": {
+    "shasum": "33411a482b046bf95e6b0cb27ee2711af4cf15ad",
+    "tarball": "https://registry.npmjs.org/is-extglob/-/is-extglob-2.1.0.tgz"
+  },
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/is-extglob-2.1.0.tgz_1476311588224_0.632759055821225"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/is-extglob/-/is-extglob-2.1.0.tgz",
+  "readme": "ERROR: No README data found!"
+}

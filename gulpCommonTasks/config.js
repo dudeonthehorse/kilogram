@@ -11,18 +11,20 @@ module.exports = {
 		cwd: dev,
 		dest: build
 	},
-
 	concatcss: {
-		src: 'css/*.less',
+		src: ['css/*.css'],
 		dest: dev,
 		cwd: dev,
 		allFile: 'styles.css'
 	},
-
+	less: {
+		src: 'less/*.less',
+		dest: dev + '/css',
+		cwd: dev
+	},
 	images: {
 		src: 'images/**',
 		cwd: dev,
 		dest: build + '/images'
 	}
-
 };

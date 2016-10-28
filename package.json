@@ -1,13 +1,13 @@
 {
-  "name": "kilogram",
-  "version": "1.1.0",
-  "description": "Email Development Framework",
-  "author": "Arthur Koch <dudeonthehorse@gmail.com>",
+  "name": "kilopad",
+  "version": "0.0.1",
+  "description": "Email Development TP Fork",
+  "author": "rbsx@bk.ru",
   "license": "MIT",
-  "homepage": "https://github.com/dudeonthehorse/kilogram/",
+  "homepage": "https://github.com/rbsx/kilopad/",
   "repository": {
     "type": "git",
-    "url": "git@github.com:dudeonthehorse/kilogram.git"
+    "url": "git@github.com:rbsx/kilopad.git"
   },
   "main": "index.js",
   "scripts": {
@@ -24,12 +24,12 @@
     "del": "2.0.2",
     "gulp": "3.9.1",
     "gulp-concat": "2.6.0",
+    "gulp-dest": "^0.2.3",
     "gulp-htmlmin": "^2.0.0",
     "gulp-inline-css": "3.0.0",
     "gulp-install": "^0.6.0",
     "gulp-less": "3.1.0",
     "gulp-nunjucks-render": "1.0.0",
-    "gulp-typograf": "1.2.0",
     "marked": "^0.3.6",
     "nunjucks-markdown": "^2.0.0",
     "require-dir": "0.3.0",
