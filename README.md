@@ -1,7 +1,7 @@
-#Why it's awesome?
+# Why it's awesome?
 Kilogram provides a minimal setup of styles, template engine and sweet tools for a fast and clean email development.
 
-#Contents
+# Contents
 - Bulletproof Email Templates:
     - <a href="http://dudeonthehorse.github.io/kilogram/kilogram/build/simple.html">v2.0 Simple Newsletter</a>   
     - <a href="http://dudeonthehorse.github.io/kilogram/kilogram_alpha/build/index.html">v1.0</a>
@@ -10,13 +10,13 @@ Kilogram provides a minimal setup of styles, template engine and sweet tools for
 - HTML Minifier
 - And some little things :)
 
-#Getting Started
+# Getting Started
 1. <a href="https://github.com/dudeonthehorse/kilogram/archive/dev.zip">Download</a> Kilogram
 2. Go to `project_name` folder using `$ ls` or `$ dir` command
 3. Run `$ gulp` to launch builder and project watcher
 4. Have fun!
 
-#Email Clients Support
+# Email Clients Support
 - All versions of desktop Outlook
 - Office 365 (web)
 - Outlook.com (web, iOS, android, windows phone)
@@ -34,6 +34,6 @@ Kilogram provides a minimal setup of styles, template engine and sweet tools for
 - Spark (iOS)
 - Polymail (iOS, OSX)
 
-#Special Thanks
+# Special Thanks
 - @emailwizardry
 - @csscoderRU
