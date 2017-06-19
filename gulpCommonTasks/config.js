@@ -9,14 +9,22 @@ module.exports = {
 	template: {
 		src: ['*.html', '!_*.html'],
 		cwd: dev,
-		dest: build
+		dest: build,
+		data: dev + '/data.json',
+		utm: {
+			source: 'autofunnels',
+			medium: 'email',
+			campaign: 'sever',
+			term: 'newsletter',
+			content: 'content'
+		}
 	},
 
 	concatcss: {
-		src: 'css/*.less',
+		src: 'less/*.less',
 		dest: dev,
 		cwd: dev,
-		allFile: 'styles.css'
+		allFile: 'css/styles.css'
 	},
 
 	images: {

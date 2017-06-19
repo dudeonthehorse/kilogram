@@ -1,6 +1,5 @@
 node_modules/
 projects/
-build
 .DS_Store
 styles.css
 .idea
