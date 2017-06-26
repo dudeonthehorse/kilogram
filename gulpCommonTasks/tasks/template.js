@@ -12,12 +12,10 @@ var marked = require('marked');
 var markdown = require('nunjucks-markdown');
 var path = require('path');
 var typograf = require('gulp-typograf');
-var utm  = require('gulp-utm2html');
 
 gulp.task('template', function() {
 	var env = nunjucksRender.nunjucks.configure([config.cwd], {
-		watch: false,
-		breaks: true
+		watch: false
 	});
 
 	env.addFilter('limit', function (input, limit) {
@@ -42,7 +40,9 @@ gulp.task('template', function() {
 		return input;
 	});
 
-	markdown.register(env, marked);
+	markdown.register(env, marked.setOptions({
+		breaks: true
+	}));
 
 	return gulp.src(config.src, {
 			cwd: config.cwd
@@ -51,20 +51,15 @@ gulp.task('template', function() {
 			errorHandler: notify.onError("Error: <%= error.message %>")
 		}))
 		.pipe(nunjucksRender())
-		.pipe(typograf({ locale: ['ru', 'en-US'] }))
+		.pipe(typograf({ locale: ['en-US', 'ru'] }))
 		.pipe(kinky())
 		.pipe(inlineCss({
-			removeStyleTags: true,
-			applyStyleTags: true,
+			removeStyleTags: false,
+			applyStyleTags: false,
+			removeLinkTags: true,
+			applyLinkTags: true,
 			preserveMediaQueries: true
 		}))
-		/*.pipe(utm({
-			source: config.utm.source,
-			medium: config.utm.medium,
-			campaign: config.utm.campaign,
-			term: config.utm.term,
-			content: config.utm.content
-		}))*/
 		.pipe(notify({
 			title: 'Kilogram',
 			message: "Boooya! I'm done!",

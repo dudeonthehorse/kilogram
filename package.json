@@ -1,52 +1,49 @@
 {
-  "name": "kilogram",
-  "version": "1.1.0",
-  "description": "Email Development Framework",
-  "author": "Arthur Koch <dudeonthehorse@gmail.com>",
-  "license": "MIT",
-  "homepage": "https://github.com/dudeonthehorse/kilogram/",
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:dudeonthehorse/kilogram.git"
-  },
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\""
-  },
-  "keywords": [
-    "email",
-    "html",
-    "css",
-    "outlook",
-    "gmail"
-  ],
-  "dependencies": {
-    "del": "2.0.2",
-    "gulp": "3.9.1",
-    "gulp-concat": "2.6.0",
-    "gulp-htmlmin": "^2.0.0",
-    "gulp-inline-css": "3.1.0",
-    "gulp-install": "^0.6.0",
-    "gulp-less": "3.1.0",
-    "gulp-nunjucks-render": "1.0.0",
-    "gulp-typograf": "3.0.0",
-    "marked": "^0.3.6",
-    "nunjucks-markdown": "^2.0.0",
-    "path": "0.12.7",
-    "require-dir": "0.3.0",
-    "request": "2.79.0",
-    "run-sequence": "1.1.2",
-    "kinky": "2.0.0",
-    "gulp-utm2html": "0.0.1"
-  },
-  "devDependencies": {
-    "browser-sync": "^2.12.8",
-    "gulp-cache": "^0.4.3",
-    "gulp-concat": "^2.6.0",
-    "gulp-htmlmin": "^2.0.0",
-    "gulp-imagemin": "^2.4.0",
-    "gulp-inline-css": "^3.0.0",
-    "gulp-notify": "^2.2.0",
-    "gulp-plumber": "^1.1.0"
-  }
+    "name": "kilogram",
+    "version": "3.0.0",
+    "description": "Email Development Framework",
+    "author": "Arthur Koch <dudeonthehorse@gmail.com>",
+    "license": "MIT",
+    "homepage": "https://github.com/dudeonthehorse/kilogram/",
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:dudeonthehorse/kilogram.git"
+    },
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\""
+    },
+    "keywords": [
+        "kilogram",
+        "email",
+        "html",
+        "css"
+    ],
+    "dependencies": {
+        "del": "2.0.2",
+        "gulp": "3.9.1",
+        "gulp-concat": "2.6.0",
+        "gulp-htmlmin": "^2.0.0",
+        "gulp-inline-css": "3.1.0",
+        "gulp-install": "^0.6.0",
+        "gulp-less": "3.1.0",
+        "gulp-nunjucks-render": "1.0.0",
+        "gulp-typograf": "3.0.0",
+        "kinky": "2.0.3",
+        "marked": "^0.3.6",
+        "nunjucks-markdown": "^2.0.0",
+        "path": "0.12.7",
+        "request": "2.79.0",
+        "require-dir": "0.3.0",
+        "run-sequence": "1.1.2"
+    },
+    "devDependencies": {
+        "browser-sync": "^2.12.8",
+        "gulp-cache": "^0.4.3",
+        "gulp-concat": "^2.6.0",
+        "gulp-htmlmin": "^2.0.0",
+        "gulp-imagemin": "^2.4.0",
+        "gulp-notify": "^2.2.0",
+        "gulp-plumber": "^1.1.0"
+    }
 }
